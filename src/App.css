@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   box-sizing: border-box;
 }
 
@@ -8,6 +8,16 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+/* .map {
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .map {
+    height: auto;
+  }
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

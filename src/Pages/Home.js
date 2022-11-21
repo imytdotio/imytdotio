@@ -8,7 +8,7 @@ import map from "../Assets/map.png";
 
 const Section = (props) => <div className="flex mb-8">{props.children}</div>;
 const SectionHeader = (props) => (
-  <h3 className="w-24 mr-8 text-gray-400 ">{props.children}</h3>
+  <h3 className="w-24 mr-8 text-gray-400">{props.children}</h3>
 );
 const Link = (props) => (
   <a
@@ -21,7 +21,7 @@ const Link = (props) => (
 );
 export const Home = (props) => {
   return (
-    <div className="w-full text-left">
+    <div className="w-full text-left sm:px-16 px-8">
       <h1 className="text-6xl font-bold mb-8 mt-2">🏠 Home</h1>
       <Section>
         <SectionHeader />
@@ -49,7 +49,7 @@ export const Home = (props) => {
       <Section>
         <SectionHeader>Locate</SectionHeader>
         <div>
-          <img src={map} className="h-96 rounded-xl " />
+          <img src={map} className="sm:h-96 h-48 rounded-xl " />
           <p className="text-right mr-4 text-gray-400">
             <FiMapPin className="inline mr-2" />
             Hong Kong
