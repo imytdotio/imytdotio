@@ -14,6 +14,7 @@ const SectionHeader = (props) => (
 export const Home = (props) => {
   return (
     <div className="w-full text-left">
+      <h1 className="text-6xl font-bold mb-8 mt-2">🏠 Home</h1>
       <Section>
         <SectionHeader />
         <p className="w-4/5 lg:w-3/5">

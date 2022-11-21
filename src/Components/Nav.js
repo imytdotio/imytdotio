@@ -27,7 +27,7 @@ export const Nav = (props) => {
           <NavLink to="/bets" exact className={nav} activeClassName={active}>
             🎲 賭博
           </NavLink>
-          <NavLink to="/outputs" exact className={nav} activeClassName={active}>
+          <NavLink to="/stack" exact className={nav} activeClassName={active}>
             ⚔️ 技能／產出
           </NavLink>
           <NavLink
