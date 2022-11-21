@@ -31,8 +31,11 @@ export const Home = (props) => {
           <Link href="https://github.com/imytdotio">自學 Programmer</Link>
           。現正修讀大學課程 - Data Science y/4, 同時自學🧑‍💻 Programming和在 IG
           分享內容。 <br className="mb-4" />
-          由於我十分喜歡📚 閱讀和觀看「🚀 生產力、⛓ 習慣」相關的書本和內容。在
-          ✍️ IG上都是分享有關「自我成長」類的內容。 我{" "}
+          由於我十分喜歡📚 閱讀和觀看
+          <Link href="https://www.instagram.com/explore/tags/imyt_mp/">
+            「🚀 生產力、⛓ 習慣」
+          </Link>
+          相關的書本和內容。在 ✍️ IG上都是分享有關「自我成長」類的內容。 我{" "}
           <Link href="https://imyt.gumroad.com/l/5am">🕔 05:00 起床</Link>{" "}
           ，每天 🍳 煮早餐、
           <Link href="https://www.instagram.com/explore/tags/imyt_readinghut/">
