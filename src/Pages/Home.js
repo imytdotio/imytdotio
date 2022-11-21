@@ -7,7 +7,7 @@ import React from "react";
 
 export const Home = (props) => {
   return (
-    <div className="w-screen m-auto">
+    <div className="w-full">
       {" "}
       <h1>IMYTDOTIO</h1>
       <p className="w-96 m-auto">

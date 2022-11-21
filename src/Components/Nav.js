@@ -7,9 +7,23 @@ import React from "react";
 
 export const Nav = (props) => {
   return (
-    <div className="w-2/5">
-      <div className="bg-white w-80 m-auto my-16 p-4 rounded-xl shadow-md">
-        NavBar
+    <div className="h-screen mx-16">
+      <div className="bg-white w-80 m-auto p-4 rounded-xl shadow-md">
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
       </div>
     </div>
   );

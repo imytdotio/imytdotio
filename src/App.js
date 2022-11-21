@@ -7,14 +7,17 @@ import { Nav } from "./Components/Nav";
 
 function App() {
   return (
-    <div className="App flex w-screen">
-      <Nav className='flex-1 flex'/>
-      <BrowserRouter className='flex-grow w-max m-auto'>
+    <div className="App my-16 flex">
+      <div className="collapse md:visible">
+        <Nav />
+      </div>
+
+      <BrowserRouter className="">
         <Switch>
-          <Route path='/' exact>
+          <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/products">
+          <Route path="/products" exact>
             <Products />
           </Route>
         </Switch>
