@@ -21,7 +21,7 @@ const Link = (props) => (
 );
 export const Home = (props) => {
   return (
-    <div className="w-full text-left sm:px-16 px-8">
+    <div className="w-full text-left px-8">
       <h1 className="text-6xl font-bold mb-8 mt-2">🏠 Home</h1>
       <Section>
         <SectionHeader />

@@ -22,7 +22,7 @@ export const Stack = (props) => {
   );
   const icon = "inline mr-2";
   return (
-    <div className="text-left">
+    <div className="w-full text-left px-8">
       <h1 className="text-6xl font-bold mb-8 mt-2">🧠 Stack</h1>
       <Section>
         <SectionHeader>Programming</SectionHeader>
