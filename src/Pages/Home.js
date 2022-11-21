@@ -7,10 +7,9 @@ import React from "react";
 
 export const Home = (props) => {
   return (
-    <div className="w-full">
-      {" "}
+    <div className="w-full text-left">
       <h1>IMYTDOTIO</h1>
-      <p className="w-96 m-auto">
+      <p className="w-4/5 lg:w-3/5">
         👋 Hello, 我是 YT，一位
         Slash，斜槓族。我是一位學生／內容創作者／Programmer。現正修讀大學課程 -
         Data Science y/4, 同時自學🧑‍💻 Programming和在 IG 分享內容。

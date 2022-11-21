@@ -8,11 +8,10 @@ import { Nav } from "./Components/Nav";
 function App() {
   return (
     <div className="App my-16 flex">
-      <div className="collapse md:visible">
-        <Nav />
-      </div>
-
       <BrowserRouter className="">
+        <div className="collapse lg:visible">
+          <Nav />
+        </div>
         <Switch>
           <Route path="/" exact>
             <Home />
