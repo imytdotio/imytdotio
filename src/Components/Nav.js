@@ -8,9 +8,9 @@ import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 export const Nav = (props) => {
   const nav =
-    "text-black px-4 py-1 my-1 block rounded-md hover:bg-gray-400 duration-100";
+    "text-black px-4 py-1 my-1 block rounded-md hover:bg-gray-200 duration-100";
   const active =
-    "text-white px-4 py-2 my-1 block rounded-md bg-black hover:bg-black ";
+    "text-white px-4 py-2 my-1 block rounded-md bg-black hover:bg-gray-900";
   const subheading = "text-gray-600 font-medium";
   const link =
     "text-black px-4 py-1 my-1 block rounded-md hover:text-blue-600 duration-100";

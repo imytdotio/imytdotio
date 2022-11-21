@@ -8,7 +8,7 @@ import map from "../Assets/map.png";
 
 const Section = (props) => <div className="flex mb-8">{props.children}</div>;
 const SectionHeader = (props) => (
-  <h3 className="w-16 mr-8 text-gray-400 ">{props.children}</h3>
+  <h3 className="w-24 mr-8 text-gray-400 ">{props.children}</h3>
 );
 const Link = (props) => (
   <a
