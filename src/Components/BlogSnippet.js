@@ -9,7 +9,7 @@ export const BlogSnippet = (props) => {
   return (
     // <div className="bg-white inline-block p-4 rounded-xl shadow-md">
     <a
-      className="bg-white text-black inline-block p-4 rounded-xl shadow-md text-left w-3/5"
+      className="bg-white text-black inline-block p-4 rounded-xl shadow-md text-left md:w-3/5 w-full"
       href={props.link}
       target="_blank"
     >
