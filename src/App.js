@@ -6,6 +6,7 @@ import { Home } from "./Pages/Home";
 import { Nav } from "./Components/Nav";
 import { Bets } from "./Pages/Bets";
 import { Stack } from "./Pages/Stack";
+import { Blog } from "./Pages/Blog";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/stack" exact>
             <Stack />
+          </Route>
+          <Route path="/blog" exact>
+            <Blog />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -38,6 +38,9 @@ export const Nav = (props) => {
           >
             📦 產品
           </NavLink>
+          <NavLink to="/blog" exact className={nav} activeClassName={active}>
+            📝 文章
+          </NavLink>
         </div>
 
         <div className="mb-8">
