@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import { FiMapPin } from "react-icons/fi";
 import map from "../Assets/map.png";
 /**
@@ -21,11 +21,11 @@ const Link = (props) => (
 );
 export const Home = (props) => {
   return (
-    <div className="w-full text-left px-8">
+    <div className="text-left px-8">
       <h1 className="text-6xl font-bold mb-8 mt-2">🏠 Home</h1>
       <Section>
         <SectionHeader />
-        <p className="w-4/5 lg:w-3/5 leading-6">
+        <p className="w-4/5 lg:w-3/5 leading-6 ">
           👋 Hello, 我是 YT，一位 Slash，斜槓族。我是一位學生／
           <Link href="https://instagram.com/imyt.io">內容創作者</Link>／
           <Link href="https://github.com/imytdotio">自學 Programmer</Link>

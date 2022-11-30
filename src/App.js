@@ -4,17 +4,21 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Products } from "./Pages/Products";
 import { Home } from "./Pages/Home";
 import { Nav } from "./Components/Nav";
+import { SimpleNav } from "./Components/SimpleNav";
+
 import { Bets } from "./Pages/Bets";
 import { Stack } from "./Pages/Stack";
 import { Blog } from "./Pages/Blog";
 
 function App() {
   return (
-    <div className="App my-16 flex">
-      <BrowserRouter className="">
-        <div className="collapse lg:visible">
+    // <div className="App my-16 flex m-auto">
+    <div className="App my-16 m-auto">
+      <BrowserRouter>
+        <SimpleNav />
+        {/* <div className="collapse lg:visible">
           <Nav />
-        </div>
+        </div> */}
         <Switch>
           <Route path="/" exact>
             <Home />

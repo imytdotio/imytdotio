@@ -19,7 +19,6 @@ export const Nav = (props) => {
     <div className="h-screen mx-16 text-left">
       <nav className="bg-white w-80 m-auto p-4 rounded-xl shadow-md">
         <h1 className="text-left text-4xl font-bold mb-8">IMYT.IO</h1>
-
         <div className="mb-8">
           <NavLink to="/" exact className={nav} activeClassName={active}>
             🏠 主頁
