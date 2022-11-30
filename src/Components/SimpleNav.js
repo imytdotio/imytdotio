@@ -6,12 +6,12 @@ import { NavLink } from "react-router-dom";
  * @function SimpleNav
  **/
 
-const nav = "bg-white shadow-xl p-4 m-2 text-xl rounded-xl";
+const nav = "bg-white shadow-xl p-3 m-2 text-xl rounded-xl";
 const active = "hidden";
 
 export const SimpleNav = (props) => {
   return (
-    <div className="bg-white m-8 m-auto p-8 rounded-xl mb-16">
+    <div className="bg-white m-8 m-auto p-6 rounded-xl mb-16">
       <NavLink to="/" exact className={nav} activeClassName={active}>
         🏠
       </NavLink>
