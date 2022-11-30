@@ -14,7 +14,7 @@ import {
 
 export const CV = (props) => {
   const Section = (props) => (
-    <div className="flex mb-8 border-b-2 border-gray-200 lg:w-2/3">
+    <div className="flex my-8 border-b-2 border-gray-200 lg:w-2/3">
       {props.children}
     </div>
   );
@@ -30,6 +30,12 @@ export const CV = (props) => {
   return (
     <div className="w-full text-left px-8">
       <h1 className="text-6xl font-bold mb-8 mt-2">🤠 Hi, I am Jeffrey.</h1>
+      <a
+        className="border-2 rounded-xl p-4 m-4 hover:bg-white hover:border-white hover:shadow-xl duration-200"
+        href="https://www.imyt.io/cv" target='_blank'
+      >
+        Download PDF
+      </a>
       <Section>
         <SectionHeader>Education</SectionHeader>
         <ul>
@@ -148,6 +154,30 @@ export const CV = (props) => {
                 className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
               >
                 HKID Validator
+              </a>
+            </Description>
+          </ListItem>
+          <ListItem>
+            <p>UI Design</p>
+            <Description>
+              <FiZoomIn className="inline-block mr-2 mb-1" />
+              <a
+                href="https://www.dribbble.com/imytdotio"
+                className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
+              >
+                Dribbble
+              </a>
+            </Description>
+          </ListItem>
+          <ListItem>
+            <p>Video Editing</p>
+            <Description>
+              <FiZoomIn className="inline-block mr-2 mb-1" />
+              <a
+                href="https://www.youtube.com/@imyt"
+                className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
+              >
+                Youtube
               </a>
             </Description>
           </ListItem>
