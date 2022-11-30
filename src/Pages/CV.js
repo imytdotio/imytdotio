@@ -13,7 +13,7 @@ import {
  **/
 
 export const CV = (props) => {
-  const Section = (props) => <div className="flex mb-8">{props.children}</div>;
+  const Section = (props) => <div className="flex mb-8 border-b-2 border-gray-200 lg:w-2/3">{props.children}</div>;
   const SectionHeader = (props) => (
     <h3 className="w-24 mr-8 text-gray-400">{props.children}</h3>
   );
@@ -21,7 +21,7 @@ export const CV = (props) => {
     return <p className="ml-2 text-gray-600 text-small">{props.children}</p>;
   };
   const ListItem = (props) => {
-    return <li className="mb-2 ">{props.children}</li>;
+    return <li className="mb-2">{props.children}</li>;
   };
   return (
     <div className="w-full text-left px-8">
