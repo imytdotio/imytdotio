@@ -65,6 +65,22 @@ export const CV = (props) => {
       <Section>
         <SectionHeader>Work Experience</SectionHeader>
         <ul>
+        <ListItem>
+            <p>
+              Solo Content Creator at{" "}
+              <a
+                href="https://www.instagram.com/imyt.io"
+                className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
+                target="_blank"
+              >
+                imyt.io
+              </a>
+            </p>
+            <Description>
+              <FiCalendar className="inline-block mr-2 mb-1" />
+              Jul 2021 ~ Now
+            </Description>
+          </ListItem>
           <ListItem>
             <p>
               Marketing <b>Internship</b> at{" "}
