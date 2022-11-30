@@ -13,7 +13,11 @@ import {
  **/
 
 export const CV = (props) => {
-  const Section = (props) => <div className="flex mb-8 border-b-2 border-gray-200 lg:w-2/3">{props.children}</div>;
+  const Section = (props) => (
+    <div className="flex mb-8 border-b-2 border-gray-200 lg:w-2/3">
+      {props.children}
+    </div>
+  );
   const SectionHeader = (props) => (
     <h3 className="w-24 mr-8 text-gray-400">{props.children}</h3>
   );
@@ -136,6 +140,9 @@ export const CV = (props) => {
               >
                 Github
               </a>
+            </Description>
+            <Description>
+              <FiZoomIn className="inline-block mr-2 mb-1" />
               <a
                 href="https://www.hkid.vercel.app/"
                 className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
