@@ -6,7 +6,11 @@ import { NavLink } from "react-router-dom";
  * @function SimpleNav
  **/
 
-const nav = "bg-white shadow-xl p-3 m-2 text-xl rounded-xl lg:p-4 text-2xl border-white border-2 duration-100 hover:border-black hover:border-2";
+// const navIcon = () => {
+//   return ()
+// }
+const nav =
+  "bg-white shadow-xl p-3 m-2 text-xl rounded-xl lg:p-4 text-2xl border-white border-2 duration-100 hover:border-black hover:border-2";
 
 const active = "hidden";
 
@@ -27,6 +31,9 @@ export const SimpleNav = (props) => {
       </NavLink>
       <NavLink to="/products" className={nav} activeClassName={active}>
         📦
+      </NavLink>
+      <NavLink to="/cv" className={nav} activeClassName={active}>
+        🤠
       </NavLink>
     </div>
   );

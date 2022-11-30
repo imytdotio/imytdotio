@@ -23,7 +23,7 @@ export const Home = (props) => {
   return (
     <div className="text-left px-8">
       <h1 className="text-6xl font-bold mb-8 mt-2">🏠 Home</h1>
-      <Section>
+      {/* <Section>
         <SectionHeader />
         <p className="w-4/5 lg:w-3/5 leading-6 ">
           👋 Hello, 我是 YT，一位 Slash，斜槓族。我是一位學生／
@@ -44,7 +44,7 @@ export const Home = (props) => {
           、學習 Programming, 然後上學。
           我很喜歡學習、閱讀、建立習慣、過有規律的生活。
         </p>
-      </Section>
+      </Section> */}
 
       <Section>
         <SectionHeader>Locate</SectionHeader>

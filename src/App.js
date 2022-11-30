@@ -9,6 +9,7 @@ import { SimpleNav } from "./Components/SimpleNav";
 import { Bets } from "./Pages/Bets";
 import { Stack } from "./Pages/Stack";
 import { Blog } from "./Pages/Blog";
+import { CV } from "./Pages/CV";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/blog" exact>
             <Blog />
+          </Route>
+          <Route path="/cv" exact>
+            <CV />
           </Route>
         </Switch>
       </BrowserRouter>
