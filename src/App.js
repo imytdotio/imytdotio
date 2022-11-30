@@ -41,6 +41,14 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
+      <footer>
+        <p>
+          Site Idea by{" "}
+          <a href="https://brianlovin.com/" target="_blank">
+            briOS
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
