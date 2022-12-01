@@ -10,6 +10,8 @@ import { Bets } from "./Pages/Bets";
 import { Stack } from "./Pages/Stack";
 import { Blog } from "./Pages/Blog";
 import { CV } from "./Pages/CV";
+import { Test } from "./Pages/Test";
+import { Footer } from "./Components/Footer";
 
 function App() {
   return (
@@ -39,16 +41,12 @@ function App() {
           <Route path="/cv" exact>
             <CV />
           </Route>
+          <Route path="/test" exact>
+            <Test />
+          </Route>
         </Switch>
       </BrowserRouter>
-      <footer>
-        <p>
-          Site Idea by{" "}
-          <a href="https://brianlovin.com/" target="_blank">
-            briOS
-          </a>
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

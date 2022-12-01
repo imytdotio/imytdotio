@@ -32,9 +32,9 @@ export const SimpleNav = (props) => {
       <NavLink to="/products" className={nav} activeClassName={active}>
         📦
       </NavLink>
-      <NavLink to="/cv" className={nav} activeClassName={active}>
+      {/* <NavLink to="/cv" className={nav} activeClassName={active}>
         🤠
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };

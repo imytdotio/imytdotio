@@ -6,6 +6,7 @@ import {
   FiMapPin,
   FiZoomIn,
 } from "react-icons/fi";
+import { SectionB, SectionHeader } from "../Components/Section";
 
 /**
  * @author
@@ -13,30 +14,30 @@ import {
  **/
 
 export const CV = (props) => {
-  const Section = (props) => (
-    <div className="flex my-8 border-b-2 border-gray-200 lg:w-2/3">
-      {props.children}
-    </div>
-  );
-  const SectionHeader = (props) => (
-    <h3 className="w-24 mr-8 text-gray-400">{props.children}</h3>
-  );
   const Description = (props) => {
     return <p className="ml-2 text-gray-600 text-small">{props.children}</p>;
   };
   const ListItem = (props) => {
     return <li className="mb-2">{props.children}</li>;
   };
+  const LinkButton = (props) => {
+    return (
+      <a
+        className="inline-block border-2 rounded-xl p-4 my-1 mr-4 hover:bg-white hover:border-white hover:shadow-xl duration-200"
+        href={props.href}
+        target="_blank"
+      >
+        {props.children}
+      </a>
+    );
+  };
+
   return (
     <div className="w-full text-left px-8">
       <h1 className="text-6xl font-bold mb-8 mt-2">🤠 Hi, I am Jeffrey.</h1>
-      <a
-        className="border-2 rounded-xl p-4 m-4 hover:bg-white hover:border-white hover:shadow-xl duration-200"
-        href="https://www.imyt.io/cv" target='_blank'
-      >
-        Download PDF
-      </a>
-      <Section>
+      <LinkButton href="https://www.dropbox.com/s/cbku9ao1hnztaiv/CV.pdf?dl=1">Download PDF</LinkButton>
+
+      <SectionB>
         <SectionHeader>Education</SectionHeader>
         <ul>
           <ListItem>
@@ -60,12 +61,12 @@ export const CV = (props) => {
             2013-2019
           </Description>
         </ul>
-      </Section>
+      </SectionB>
 
-      <Section>
+      <SectionB>
         <SectionHeader>Work Experience</SectionHeader>
         <ul>
-        <ListItem>
+          <ListItem>
             <p>
               Solo Content Creator at{" "}
               <a
@@ -102,9 +103,9 @@ export const CV = (props) => {
             </Description>
           </ListItem>
         </ul>
-      </Section>
+      </SectionB>
 
-      <Section>
+      <SectionB>
         <SectionHeader>Certification & Qualification</SectionHeader>
         <ul>
           <ListItem>
@@ -147,9 +148,9 @@ export const CV = (props) => {
             </Description>
           </ListItem>
         </ul>
-      </Section>
+      </SectionB>
 
-      <Section>
+      <SectionB>
         <SectionHeader>Skills</SectionHeader>
         <ul>
           <ListItem>
@@ -198,7 +199,7 @@ export const CV = (props) => {
             </Description>
           </ListItem>
         </ul>
-      </Section>
+      </SectionB>
     </div>
   );
 };

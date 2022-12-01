@@ -1,5 +1,6 @@
 import React from "react";
 import { FiGithub, FiGlobe, FiLinkedin } from "react-icons/fi";
+import { Section, SectionHeader } from "../Components/Section";
 
 /**
  * @author
@@ -7,10 +8,6 @@ import { FiGithub, FiGlobe, FiLinkedin } from "react-icons/fi";
  **/
 
 export const Stack = (props) => {
-  const Section = (props) => <div className="flex mb-8">{props.children}</div>;
-  const SectionHeader = (props) => (
-    <h3 className="w-24 mr-8 text-gray-400">{props.children}</h3>
-  );
   const Link = (props) => (
     <a
       target="_blank"
