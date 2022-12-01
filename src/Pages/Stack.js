@@ -1,5 +1,6 @@
 import React from "react";
 import { FiGithub, FiGlobe, FiLinkedin } from "react-icons/fi";
+import { Callout, H1, ListItem, Description } from "../Components/Components";
 import { Section, SectionHeader } from "../Components/Section";
 
 /**
@@ -18,30 +19,61 @@ export const Stack = (props) => {
     </a>
   );
   const icon = "inline mr-2";
+
   return (
     <div className="w-full text-left px-8">
-      <h1 className="text-6xl font-bold mb-8 mt-2">🧠 Stack</h1>
+      <H1>🧠 Stack</H1>
+      <Callout emoji="💬">
+        You don't become who you are by shouting affirmations in the mirror,{" "}
+        <br />
+        but by <b>having a stack of undeniable proof</b> that you are who you
+        say you are. <br />
+        <a
+          href="https://twitter.com/alexhormozi/status/1571625128806715392"
+          className="text-black"
+          target="_black"
+        >
+          — Alex Hormozi
+        </a>
+      </Callout>
       <Section>
         <SectionHeader>Programming</SectionHeader>
         <ul>
-          <p>HKID Validator</p>
-          <p className="mb-2">
-            <Link href="https://hkid.vercel.app/">
-              <FiGlobe className={icon} />
-            </Link>
-            <Link href="https://github.com/imytdotio/HKID-Validator-Generator">
-              <FiGithub className={icon} />
-            </Link>
-          </p>
-          <p>Coursera Course Completion</p>
-          <p className="mb-2">
-            <Link href="https://coursera.org/">
-              <FiGlobe className={icon} />
-            </Link>
-            <Link href="https://linkedin.com">
-              <FiLinkedin className={icon} />
-            </Link>
-          </p>
+          <ListItem>
+            <p>HKID Validator</p>
+            <Description>Latest Update: 11-29-2022</Description>
+            <Description>
+              <Link href="https://hkid.vercel.app/">
+                <FiGlobe className={icon} />
+              </Link>
+              <Link href="https://github.com/imytdotio/HKID-Validator-Generator">
+                <FiGithub className={icon} />
+              </Link>
+            </Description>
+          </ListItem>
+
+          <ListItem>
+            <p>Coursera Course Completion</p>
+            <Description>Latest Update: 11-29-2022</Description>
+            <Description>
+              <Link href="https://coursera.org/">
+                <FiGlobe className={icon} />
+              </Link>
+              <Link href="https://linkedin.com">
+                <FiLinkedin className={icon} />
+              </Link>
+            </Description>
+          </ListItem>
+
+          <ListItem>
+            <p>Room Booking System</p>
+          </ListItem>
+          <ListItem>
+            <p>Marvelous Calculator App</p>
+          </ListItem>
+          <ListItem>
+            <p>Marvelous Weather App</p>
+          </ListItem>
         </ul>
       </Section>
       <Section>

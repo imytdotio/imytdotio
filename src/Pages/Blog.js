@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BlogSnippet } from "../Components/BlogSnippet";
+import { H1 } from "../Components/Components";
+
 /**
  * @author
  * @function Blog
@@ -26,7 +28,7 @@ export const Blog = (props) => {
   }, []);
   return (
     <div className="w-full text-left px-8">
-      <h1 className="text-6xl font-bold mb-8 mt-2">📝 Blog</h1>
+      <H1>📝 Blog</H1>
 
       {isPending ? "Loading" : ""}
       {blogs &&

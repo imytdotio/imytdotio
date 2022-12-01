@@ -7,6 +7,7 @@ import {
   FiZoomIn,
 } from "react-icons/fi";
 import { SectionB, SectionHeader } from "../Components/Section";
+import { H1 } from "../Components/Components";
 
 /**
  * @author
@@ -34,8 +35,10 @@ export const CV = (props) => {
 
   return (
     <div className="w-full text-left px-8">
-      <h1 className="text-6xl font-bold mb-8 mt-2">🤠 Hi, I am Jeffrey.</h1>
-      <LinkButton href="https://www.dropbox.com/s/0mtrd3nwoucqcwl/CV.pdf?dl=1">Download PDF</LinkButton>
+      <H1>🤠 Hi, I am Jeffrey.</H1>
+      <LinkButton href="https://www.dropbox.com/s/0mtrd3nwoucqcwl/CV.pdf?dl=1">
+        Download PDF
+      </LinkButton>
 
       <SectionB>
         <SectionHeader>Education</SectionHeader>
@@ -54,12 +57,13 @@ export const CV = (props) => {
               Hang Sang University
             </Description>
           </ListItem>
-
-          <p>C.C.C. Ming Kei College</p>
-          <Description>
-            <FiCalendar className="inline-block mr-2 mb-1" />
-            2013-2019
-          </Description>
+          <ListItem>
+            <p>C.C.C. Ming Kei College</p>
+            <Description>
+              <FiCalendar className="inline-block mr-2 mb-1" />
+              2013-2019
+            </Description>
+          </ListItem>
         </ul>
       </SectionB>
 
@@ -179,7 +183,7 @@ export const CV = (props) => {
             <Description>
               <FiZoomIn className="inline-block mr-2 mb-1" />
               <a
-                href="https://www.dribbble.com/imytdotio"
+                href="https://www.dribbble.com/imyt"
                 className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
               >
                 Dribbble

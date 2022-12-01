@@ -2,6 +2,8 @@ import React from "react";
 import { FiMapPin } from "react-icons/fi";
 import map from "../Assets/map.png";
 import { Section, SectionHeader } from "../Components/Section";
+import { H1 } from "../Components/Components";
+
 /**
  * @author
  * @function Home
@@ -19,7 +21,7 @@ const Link = (props) => (
 export const Home = (props) => {
   return (
     <div className="text-left px-8">
-      <h1 className="text-6xl font-bold mb-8 mt-2">🏠 Home</h1>
+      <H1>🏠 Home</H1>
       <Section>
         <SectionHeader />
         <p className="w-4/5 lg:w-3/5 leading-6 ">
