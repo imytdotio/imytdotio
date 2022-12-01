@@ -35,7 +35,7 @@ export const CV = (props) => {
   return (
     <div className="w-full text-left px-8">
       <h1 className="text-6xl font-bold mb-8 mt-2">🤠 Hi, I am Jeffrey.</h1>
-      <LinkButton href="https://www.dropbox.com/s/cbku9ao1hnztaiv/CV.pdf?dl=1">Download PDF</LinkButton>
+      <LinkButton href="https://www.dropbox.com/s/0mtrd3nwoucqcwl/CV.pdf?dl=1">Download PDF</LinkButton>
 
       <SectionB>
         <SectionHeader>Education</SectionHeader>
