@@ -37,7 +37,7 @@ export const Products = (props) => {
   const ProductBlock = (props) => {
     return (
       <a href={props.href} className="text-black" target="_blank">
-        <div className="bg-white p-8 lg:p-4 lg:w-1/2 flex rounded-xl shadow-md mb-4">
+        <div className="bg-white p-8 lg:p-4 xl:w-1/2 flex rounded-xl shadow-md mb-4">
           <img
             src={props.thumbnail}
             className="w-48 hidden md:block rounded-xl mr-8 object-cover"

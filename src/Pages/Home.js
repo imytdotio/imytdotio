@@ -2,7 +2,7 @@ import React from "react";
 import { FiMapPin } from "react-icons/fi";
 import map from "../Assets/map.png";
 import { Section, SectionHeader } from "../Components/Section";
-import { H1 } from "../Components/Components";
+import { Callout, H1 } from "../Components/Components";
 import { Footer } from "../Components/Footer";
 
 /**
@@ -23,6 +23,11 @@ export const Home = (props) => {
   return (
     <div className="text-left px-8">
       <H1>🏠 Home</H1>
+      <Callout emoji="🎁" className="">
+        <a href="https://imyt.gumroad.com/l/ring/free" target="_blank">
+          按這裏免費獲得 Activity Ring{" "}
+        </a>
+      </Callout>
       <Section>
         <SectionHeader />
         <p className="w-4/5 lg:w-3/5 leading-6 ">

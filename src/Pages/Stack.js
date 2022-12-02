@@ -23,7 +23,7 @@ export const Stack = (props) => {
   return (
     <div className="w-full text-left px-8">
       <H1>🧠 Stack</H1>
-      <Callout emoji="💬">
+      <Callout emoji="💬" className="hidden lg:block">
         You don't become who you are by shouting affirmations in the mirror,{" "}
         <br />
         but by <b>having a stack of undeniable proof</b> that you are who you

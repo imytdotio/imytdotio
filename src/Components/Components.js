@@ -7,7 +7,7 @@ import React from "react";
 
 export const Callout = (props) => {
   return (
-    <div className="hidden lg:block">
+    <div className={`${props.className}`}>
       <div className="bg-white flex rounded-xl border-black border-4 p-8 w-fit mb-8 h-fit">
         <p className="m-auto mr-2 text-4xl">{props.emoji}</p>
         <p className="m-auto mr-2">{props.children}</p>

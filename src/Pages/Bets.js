@@ -13,7 +13,7 @@ export const Bets = (props) => {
     <div className="w-full text-left px-8">
       <H1>🎲 Bets</H1>
 
-      <Callout emoji="💡">
+      <Callout emoji="💡" className="hidden lg:block">
         Bets
         直譯成中文的話應該是賭博，但準確來說，我想表達的意思，更像是實驗🧪。
         <br />
