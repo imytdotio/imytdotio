@@ -3,6 +3,7 @@ import { FiMapPin } from "react-icons/fi";
 import map from "../Assets/map.png";
 import { Section, SectionHeader } from "../Components/Section";
 import { H1 } from "../Components/Components";
+import { Footer } from "../Components/Footer";
 
 /**
  * @author
@@ -64,6 +65,7 @@ export const Home = (props) => {
           <p>Completed Coursera</p>
         </ul>
       </Section>
+      <Footer />
     </div>
   );
 };
