@@ -21,7 +21,7 @@ export const Bets = (props) => {
         Bets。 <br /> 有機會成功，有機會失敗，Who knows?
       </Callout>
 
-      {/* 投入時間、成功、Current Progress、諗法、結果 */}
+      {/* original idea, pivot, 投入時間、成功、Current Progress、諗法、結果 */}
 
       <Section>
         <SectionHeader>imyt.io</SectionHeader>

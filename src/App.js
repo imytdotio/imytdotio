@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Products } from "./Pages/Products";
+import { Products } from "./Pages/Products_dumb";
 import { Home } from "./Pages/Home";
 import { Nav } from "./Components/Nav";
 import { SimpleNav } from "./Components/SimpleNav";
