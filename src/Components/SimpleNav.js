@@ -27,7 +27,7 @@ export const SimpleNav = (props) => {
         📝
       </NavLink>
       <NavLink to="/stack" className={nav} activeClassName={active}>
-        ⚔️
+        🧠
       </NavLink>
       <NavLink to="/products" className={nav} activeClassName={active}>
         📦

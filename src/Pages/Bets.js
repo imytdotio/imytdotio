@@ -18,7 +18,7 @@ export const Bets = (props) => {
         直譯成中文的話應該是賭博，但準確來說，我想表達的意思，更像是實驗🧪。
         <br />
         大型 projects，有機會 monetize，前期工作會投入金錢／大量時間，會歸類為
-        Bets。 <br /> 有機會成功，有機會失敗，Who knows?
+        Bets。 <br /> <b>有機會成功，有機會失敗，Who knows?</b>
       </Callout>
 
       {/* original idea, pivot, 投入時間、成功、Current Progress、諗法、結果 */}
