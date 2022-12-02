@@ -64,16 +64,30 @@ export const Products = (props) => {
       <ProductBlock
         title="Planner"
         description="建立習慣最重要嘅就係「系統」，而我可以建立自學習慣、每日食健康早餐、飲 2L 水，全靠呢個我自己 design 嘅 planner。"
-        price="$15"
+        price="$5"
         thumbnail="https://public-files.gumroad.com/variants/4yt59byjdtd33w5kmlv9wtq2rbfs/3298c3eb001bbed90f1d616da66708480096a0a1b6e81bd4f8a2d6e9b831d301"
         href="https://imyt.gumroad.com/l/planner"
       />
       <ProductBlock
         title="你都可以 05:00 起身"
         description="我每日都 05:00 起身，令我有時間自學 Programming、讀書、食豐富早餐。如果你都想 05:00 起身就可以睇我早起嘅 40 個方法。"
-        price="$15"
+        price="$5+"
         thumbnail="https://public-files.gumroad.com/variants/he7vxm9msydehjhrbwlh73p6iqw6/f5218916c2116f8c5a1a4690a057d203a75a7abea3fc791723ba389b8a28d8ef"
         href="https://imyt.gumroad.com/l/5am"
+      />
+      <ProductBlock
+        title="Instagram Guide"
+        description=""
+        price="$5+"
+        thumbnail="https://public-files.gumroad.com/8vcnwj2oy1rv8yg9gavyczn0y2iv"
+        href="https://imyt.gumroad.com/l/instagramguide"
+      />
+      <ProductBlock
+        title="如何每日更新內容？"
+        description="我每日都更新內容。我點做到？全部喺曬入面。"
+        price="$69"
+        thumbnail="https://public-files.gumroad.com/53ovs54wmikwtchmrmgsz4wcbwee"
+        href="https://imyt.gumroad.com/l/prolific"
       />
     </div>
   );
