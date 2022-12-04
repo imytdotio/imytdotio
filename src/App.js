@@ -11,7 +11,7 @@ import { Stack } from "./Pages/Stack";
 import { Blog } from "./Pages/Blog";
 import { CV } from "./Pages/CV";
 import { Test } from "./Pages/Test";
-import { Footer } from "./Components/Footer";
+// import { Footer } from "./Components/Footer";
 import { Changelog } from "./Pages/Changelog";
 
 function App() {
