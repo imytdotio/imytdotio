@@ -8,6 +8,7 @@ import {
 } from "react-icons/fi";
 import { SectionB, SectionHeader } from "../Components/Section";
 import { H1 } from "../Components/Components";
+import { LinkButton } from "../Components/Components";
 
 /**
  * @author
@@ -21,17 +22,7 @@ export const CV = (props) => {
   const ListItem = (props) => {
     return <li className="mb-2">{props.children}</li>;
   };
-  const LinkButton = (props) => {
-    return (
-      <a
-        className="inline-block border-2 rounded-xl p-4 my-1 mr-4 hover:bg-white hover:border-white hover:shadow-xl duration-200"
-        href={props.href}
-        target="_blank"
-      >
-        {props.children}
-      </a>
-    );
-  };
+  
 
   return (
     <div className="w-full text-left px-8">

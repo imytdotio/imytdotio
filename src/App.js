@@ -12,6 +12,7 @@ import { Blog } from "./Pages/Blog";
 import { CV } from "./Pages/CV";
 import { Test } from "./Pages/Test";
 import { Footer } from "./Components/Footer";
+import { Changelog } from "./Pages/Changelog";
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
           </Route>
           <Route path="/test" exact>
             <Test />
+          </Route>
+          <Route path="/changelog" exact>
+            <Changelog />
           </Route>
         </Switch>
       </BrowserRouter>

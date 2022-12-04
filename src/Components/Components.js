@@ -27,3 +27,15 @@ export const Description = (props) => {
 export const ListItem = (props) => {
   return <li className="mb-2">{props.children}</li>;
 };
+
+export const LinkButton = (props) => {
+  return (
+    <a
+      className="inline-block border-2 rounded-xl p-4 my-1 mr-4 hover:bg-white hover:border-white hover:shadow-xl duration-200"
+      href={props.href}
+      // target="_blank"
+    >
+      {props.children}
+    </a>
+  );
+};

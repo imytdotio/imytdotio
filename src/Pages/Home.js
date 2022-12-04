@@ -4,6 +4,7 @@ import map from "../Assets/map.png";
 import { Section, SectionHeader } from "../Components/Section";
 import { Callout, H1 } from "../Components/Components";
 import { Footer } from "../Components/Footer";
+import { LinkButton } from "../Components/Components";
 
 /**
  * @author
@@ -70,6 +71,7 @@ export const Home = (props) => {
           <p>Completed Coursera</p>
         </ul>
       </Section>
+      <LinkButton href="/changelog">🎞 Changelog</LinkButton>
       <Footer />
     </div>
   );
