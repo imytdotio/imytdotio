@@ -8,10 +8,10 @@ import { H1 } from "../Components/Components";
  **/
 
 export const Blog = (props) => {
-  const description = {
-    "https://medium.com/p/bc4e995c073c": "我為自己設計咗一款週時間表同埋月時間表。呢篇文章係教大家點樣用嘅。",
-    "id2": "test2",
-  };
+  // const description = {
+  //   "https://medium.com/p/bc4e995c073c": "我為自己設計咗一款週時間表同埋月時間表。呢篇文章係教大家點樣用嘅。",
+  //   "id2": "test2",
+  // };
   const [isPending, setIsPending] = useState(false);
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
@@ -40,8 +40,8 @@ export const Blog = (props) => {
               link={blog.guid}
               pubDate={blog.pubDate}
               key={blog.guid}
-              description={description[blog.guid]}
-              categories={blog.categories}
+              // description={description[blog.guid]}
+              // categories={blog.categories}
             />
           );
         })}
