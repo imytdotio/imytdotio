@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { H1 } from "../Components/Components";
-import config from "../config";
 
 /**
  * @author
@@ -29,6 +28,7 @@ const ProductBlock = (props) => {
 };
 
 export const Products = (props) => {
+  console.log(process.env.GUMROAD_ACCESSTOKEN)
   const [products, setProducts] = useState();
   useEffect(() => {
     var myHeaders = new Headers();
@@ -41,7 +41,7 @@ export const Products = (props) => {
     var urlencoded = new URLSearchParams();
     urlencoded.append(
       "access_token",
-      config.GUMROAD_ACCESSTOKEN
+      process.env.GUMROAD_ACCESSTOKEN
     );
 
     var requestOptions = {
@@ -54,12 +54,11 @@ export const Products = (props) => {
     fetch(`https://api.gumroad.com/v2/products?${urlencoded}`, requestOptions)
       .then((response) => response.text())
       .then((result) => {
+        console.log(result)
         setProducts(JSON.parse(result).products);
       })
       .catch((error) => console.log("error", error));
   }, []);
-
-  useEffect(() => console.log(products), [products]);
   return (
     <div className="w-full text-left px-8">
       <H1>📦 Products</H1>
