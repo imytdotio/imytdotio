@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Products } from "./Pages/Products_dumb";
+import { Products } from "./Pages/Products";
 import { Home } from "./Pages/Home";
 import { Nav } from "./Components/Nav";
 import { SimpleNav } from "./Components/SimpleNav";
@@ -13,6 +13,7 @@ import { CV } from "./Pages/CV";
 import { Test } from "./Pages/Test";
 // import { Footer } from "./Components/Footer";
 import { Changelog } from "./Pages/Changelog";
+import { Products_dumb } from "./Pages/Products_dumb";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/products" exact>
             <Products />
+          </Route>
+          <Route path="/productsd" exact>
+            <Products_dumb />
           </Route>
           <Route path="/bets" exact>
             <Bets />
