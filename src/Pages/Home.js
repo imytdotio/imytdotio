@@ -24,11 +24,11 @@ export const Home = (props) => {
   return (
     <div className="text-left px-8">
       <H1>🏠 Home</H1>
-      <Callout emoji="🎁" className="">
+      {/* <Callout emoji="🎁" className="">
         <a href="https://imyt.gumroad.com/l/ring/free" target="_blank">
           按這裏免費獲得 Activity Ring{" "}
         </a>
-      </Callout>
+      </Callout> */}
       <Section>
         <SectionHeader />
         <p className="w-4/5 lg:w-3/5 leading-6 ">

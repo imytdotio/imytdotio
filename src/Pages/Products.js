@@ -34,10 +34,8 @@ export const Products = (props) => {
   useEffect(() => {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-    myHeaders.append(
-      "Cookie",
-      "_gumroad_app_session=uGh36gDBu6fr5WbwrtZwyMmgo11G2pc8mY%2B6hNTpJg9uKaxDCBtJ8D%2FjxzUrFyZ9bLmkTXPmbLvnu5WaNPf4i3uUY5IW8v5W3GWmWMNciCwNKVLk3CHzOZHPD6CCjCtUwiOyK2kj1kef8L%2FaH7KWemxATcgFTft7HUnkFvDI4bR2n0G54SLrwhJn2yh%2FfWMCY6zbUT3fxU1lIQef11h1FWkNsuQMTab2heN6DZpZMj2RoDS786GSj6fiMqTQ75zqNmkR%2BQsc1N88kG3Mtf0LrTbhKPKg--TqODJ9izPooaAOBN--IYfBzYgsblJ3ymugzYli9g%3D%3D; _gumroad_guid=338b536f-a9c6-4087-836b-ff6e6f8e9531"
-    );
+    myHeaders.append("Cookie", "_gumroad_app_session=cuSMOfU0HjKxtXBSI56jz4fuSlLD3qDOEi9THJTCeIPnlr1jX%2Bm04jRAyx6dVqqzL2EvGd1AW%2B%2BB6GUeMeJrKZ3iPqPLbW8kF1ByCb0FziNyWNBZxdpMy8uRqkX4xeHBqiS1hDxong%2Bl85AgCca20ewDbqb3ZYOqqhz2xzm4PvgZYAdPSekBygqBVJigK%2BOmwb8gze3uspKCOByZG34RkAsPBHofj7ZW5burs2yDHnzsH4V0QjgtKamV9E2%2BoActCB05NuF7zsNg6ROZw7YylgjWr%2Fy9--1rhU5h%2F5YEsRIPaf--SIe2T8x8FYzM0O9GwwyrWg%3D%3D; _gumroad_guid=338b536f-a9c6-4087-836b-ff6e6f8e9531; _mkra_stck=mysql%3A1672151245.1915936");
+
 
     var urlencoded = new URLSearchParams();
     urlencoded.append(

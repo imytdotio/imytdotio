@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { BrowserRouter } from "react-router-dom";
 import { Callout, H1 } from "../Components/Components";
 import { Section, SectionHeader } from "../Components/Section";
@@ -9,6 +10,16 @@ import { Section, SectionHeader } from "../Components/Section";
  **/
 
 export const Bets = (props) => {
+  const [content, setContent] = useState();
+  useEffect(() => {
+    import("../Blog/bets/imyt.io.md").then((res) => {
+      fetch(res.default)
+        .then((res) => res.text())
+        .then((res) => setContent(res))
+        .catch((err) => console.log(err));
+    });
+  }, []);
+
   return (
     <div className="w-full text-left px-8">
       <H1>🎲 Bets</H1>
@@ -23,38 +34,32 @@ export const Bets = (props) => {
 
       {/* original idea, pivot, 投入時間、成功、Current Progress、諗法、結果 */}
 
-      <Section>
-        <SectionHeader>imyt.io</SectionHeader>
+      <Section header="imyt.io">
+        {/* <p>我在 2021 年 7 月 1 日開始更新 imyt.io 計劃，主要在 Instagram 分享我的閱讀筆記、生產力工具。</p> */}
+        <ReactMarkdown children={content} />
+      </Section>
+
+      <Section header="StudyNomad">
+        <ReactMarkdown children={content} />
+      </Section>
+
+      <Section header="Planner">
+        <ReactMarkdown children={content} />
+      </Section>
+
+      <Section header="5am e-book">
         <p>Hello</p>
       </Section>
 
-      <Section>
-        <SectionHeader>StudyNomad</SectionHeader>
+      <Section header="1% Circle">
         <p>Hello</p>
       </Section>
 
-      <Section>
-        <SectionHeader>Planner</SectionHeader>
+      <Section header="ActivityRing">
         <p>Hello</p>
       </Section>
 
-      <Section>
-        <SectionHeader>5am e-book</SectionHeader>
-        <p>Hello</p>
-      </Section>
-
-      <Section>
-        <SectionHeader>1% Circle</SectionHeader>
-        <p>Hello</p>
-      </Section>
-
-      <Section>
-        <SectionHeader>ActivityRing</SectionHeader>
-        <p>Hello</p>
-      </Section>
-
-      <Section>
-        <SectionHeader>HKStoicism</SectionHeader>
+      <Section header="HKStoicism">
         <p>Hello</p>
       </Section>
     </div>
