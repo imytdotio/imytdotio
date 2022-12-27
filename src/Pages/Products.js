@@ -28,7 +28,8 @@ const ProductBlock = (props) => {
 };
 
 export const Products = (props) => {
-  console.log(process.env.GUMROAD_ACCESSTOKEN)
+  console.log(process.env)
+  console.log(process.env.REACT_APP_GUMROAD_ACCESSTOKEN)
   const [products, setProducts] = useState();
   useEffect(() => {
     var myHeaders = new Headers();
@@ -41,7 +42,7 @@ export const Products = (props) => {
     var urlencoded = new URLSearchParams();
     urlencoded.append(
       "access_token",
-      process.env.GUMROAD_ACCESSTOKEN
+      process.env.REACT_APP_GUMROAD_ACCESSTOKEN
     );
 
     var requestOptions = {
