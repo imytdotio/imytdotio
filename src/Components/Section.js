@@ -19,7 +19,7 @@ export const Section = (props) => {
       className={`grid items-start grid-cols-1 gap-4 md:gap-6 md:grid-cols-12 mb-4 ${props.className}`}
     >
       <h3
-        className={`col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40`}
+        className={`col-span-2 pt-8 text-lg font-extrabold text-black md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40`}
       >
         {props.header}
       </h3>
