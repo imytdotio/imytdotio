@@ -30,8 +30,7 @@ export const Home = (props) => {
         </a>
       </Callout> */}
       <Section>
-        <SectionHeader />
-        <p className="w-4/5 lg:w-3/5 leading-6 ">
+        <p>
           👋 Hello, 我是 YT，一位 Slash，斜槓族。我是一位學生／
           <Link href="https://instagram.com/imyt.io">內容創作者</Link>／
           <Link href="https://github.com/imytdotio">自學 Programmer</Link>
@@ -52,10 +51,9 @@ export const Home = (props) => {
         </p>
       </Section>
 
-      <Section>
-        <SectionHeader>Locate</SectionHeader>
+      <Section header="Locate">
         <div>
-          <img src={map} className="sm:h-96 h-48 object-cover rounded-xl " />
+          <img src={map} className="object-cover rounded-xl " />
           <p className="text-right mr-4 text-gray-400">
             <FiMapPin className="inline mr-2" />
             Hong Kong
@@ -63,8 +61,7 @@ export const Home = (props) => {
         </div>
       </Section>
 
-      <Section>
-        <SectionHeader>History</SectionHeader>
+      <Section header="History">
         <ul>
           <p>IMYT.IO</p>
           <p>Learning React</p>

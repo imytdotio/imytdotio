@@ -5,11 +5,25 @@ import React from "react";
  * @function Section
  **/
 
+// export const Section = (props) => {
+//   return (
+//     <div className={`lg:flex  my-8 ${props.className}`}>
+//       <h3 className={`w-24 mr-8 sm:mb-2 text-gray-400 `}>{props.header}</h3>
+//       <p className="w-96">{props.children}</p>
+//     </div>
+//   );
+// };
 export const Section = (props) => {
   return (
-    <div className={`grid grid-cols-12 my-8 ${props.className}`}>
-      <h3 className={`col-span-1 w-24 mr-8 text-gray-400 ${props.className}`}>{props.header}</h3>
-      <div className="sm:col-span-6 col-span-11">{props.children}</div>
+    <div
+      className={`grid items-start grid-cols-1 gap-4 md:gap-6 md:grid-cols-12 mb-4 ${props.className}`}
+    >
+      <h3
+        className={`col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40`}
+      >
+        {props.header}
+      </h3>
+      <p className="col-span-10 max-w-prose">{props.children}</p>
     </div>
   );
 };

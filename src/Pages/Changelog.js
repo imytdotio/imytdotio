@@ -1,9 +1,30 @@
 import React from "react";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 /**
  * @author
  * @function Changelog
  **/
+
+const changes = [
+  {
+    title: "Changelog updated",
+    date: "2022-12-29",
+    section: "imyt.io",
+    content: `# hello
+
+    ✅ Created Changelog
+    ⏳ Markdown implementation
+    ⏳ Connect to CMS (Airtable?)
+    ⏳ Easier form to fill in
+    🔺
+    🔻
+    ➕ More dynamic tags (Color Change!)
+    ➕ More dynamic tags
+    
+    Changelog 呢個 idea 係嚟自 BrianLovin, 其實呢個網嘅原形都係嚟自佢。我覺得 changelog 呢個 idea 好正，可以記錄我做過啲乜嘢。`,
+  },
+];
 
 const Tag = (props) => {
   return (
@@ -34,34 +55,15 @@ const Log = (props) => {
 export const Changelog = (props) => {
   return (
     <div>
-      <Log
-        date="2022-12-29"
-        title="Bought changelog.today domain"
-        section="Changelog.today"
-      >
-        🧠 Linktree type: changelog.today/{"{yourname}"}
-        <br />
-      </Log>
-      <Log date="2022-12-29" title="Changelog updated" section="imyt.io">
-        ✅ Created Changelog <br />
-        ⏳ Markdown implementation
-        <br />
-        ⏳ Connect to CMS (Airtable?)
-        <br />
-        ⏳ Easier form to fill in
-        <br />
-        🔺
-        <br />
-        🔻 <br />
-        ➕ More dynamic tags (Color Change!)
-        <br />
-        ➕ More dynamic tags
-        <br />
-        <br /> Changelog 呢個 idea 係嚟自{" "}
-        <a href="https://changelog.brianlovin.com/">BrianLovin</a>,
-        其實呢個網嘅原形都係嚟自佢。我覺得 changelog 呢個 idea
-        好正，可以記錄我做過啲乜嘢。
-      </Log>
+      {changes.map((change) => {
+        return (
+          <Log title={change.title} date={change.date} section={change.date}>
+            <p>{change.content}</p>
+            {/* <ReactMarkdown children={change.content} /> */}
+            <ReactMarkdown className="w-96"></ReactMarkdown>
+          </Log>
+        );
+      })}
     </div>
   );
 };
