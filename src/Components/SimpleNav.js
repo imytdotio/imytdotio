@@ -23,12 +23,12 @@ export const SimpleNav = (props) => {
       </NavLink>
       <NavLink to="/bets" className={nav} activeClassName={active}>
         🎲
+      </NavLink>{" "}
+      <NavLink to="/stack" className={nav} activeClassName={active}>
+        🧠
       </NavLink>
       <NavLink to="/blog" className={nav} activeClassName={active}>
         📝
-      </NavLink>
-      <NavLink to="/stack" className={nav} activeClassName={active}>
-        🧠
       </NavLink>
       <NavLink to="/products" className={nav} activeClassName={active}>
         📦

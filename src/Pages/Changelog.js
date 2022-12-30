@@ -1,30 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Section } from "../Components/Section";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 /**
  * @author
  * @function Changelog
  **/
-
-const changes = [
-  {
-    title: "Changelog updated",
-    date: "2022-12-29",
-    section: "imyt.io",
-    content: `# hello
-
-    ✅ Created Changelog
-    ⏳ Markdown implementation
-    ⏳ Connect to CMS (Airtable?)
-    ⏳ Easier form to fill in
-    🔺
-    🔻
-    ➕ More dynamic tags (Color Change!)
-    ➕ More dynamic tags
-    
-    Changelog 呢個 idea 係嚟自 BrianLovin, 其實呢個網嘅原形都係嚟自佢。我覺得 changelog 呢個 idea 好正，可以記錄我做過啲乜嘢。`,
-  },
-];
 
 const Tag = (props) => {
   return (
@@ -37,33 +18,63 @@ const Tag = (props) => {
 
 const Log = (props) => {
   return (
-    <div className="flex m-auto w-fit px-8 pb-4 text-left lg:w-2/5 md:w-1/2 w-10/12 my-4">
+    <div className="flex m-auto px-8 pb-4 text-left my-4">
       <p className="text-gray-600 mr-12">{props.date}</p>
       <div>
         <h1 className="text-lg font-bold">{props.title}</h1>
         <div className="flex">
           <Tag icon="🚀" tag="Update" />
-          <Tag icon="🧪" tag="Smallbet" />
+          {/* <Tag icon="🧪" tag="Smallbet" /> */}
           {props.section && <Tag tag={props.section} />}
         </div>
-        <p>{props.children}</p>
+        {props.children}
       </div>
     </div>
   );
 };
 
 export const Changelog = (props) => {
+  const [changes, setChanges] = useState("");
+  useEffect(() => {
+    var myHeaders = new Headers();
+    myHeaders.append("Authorization", "Bearer key9i7Kg5nT0BpPuC");
+    myHeaders.append(
+      "Cookie",
+      "brw=brwRORZisik3kXjil; AWSALB=dCm8lVYs8YlhtATLudgz77II/h4a+RAbeJJu/K+dsNgeLSeiqsnqP0f6jgMzhEQkj6G1xGnyvKfGRn2iHZN8jHOpmQ64fQLAbZsRFSjHnwHgdTk9Od5Kn/13RJsz; AWSALBCORS=dCm8lVYs8YlhtATLudgz77II/h4a+RAbeJJu/K+dsNgeLSeiqsnqP0f6jgMzhEQkj6G1xGnyvKfGRn2iHZN8jHOpmQ64fQLAbZsRFSjHnwHgdTk9Od5Kn/13RJsz"
+    );
+
+    var requestOptions = {
+      method: "GET",
+      headers: myHeaders,
+      redirect: "follow",
+    };
+
+    fetch(
+      "https://api.airtable.com/v0/appoojJ00LWXkHLdV/tblCJvsJRQzzITao9",
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => {
+        setChanges(JSON.parse(result).records);
+      })
+      .catch((error) => console.log("error", error));
+  }, []);
+
   return (
-    <div>
-      {changes.map((change) => {
-        return (
-          <Log title={change.title} date={change.date} section={change.date}>
-            <p>{change.content}</p>
-            {/* <ReactMarkdown children={change.content} /> */}
-            <ReactMarkdown className="w-96"></ReactMarkdown>
-          </Log>
-        );
-      })}
+    <div className="w-full text-left px-8">
+      {changes &&
+        changes.map((change) => {
+          return (
+            <Section header={change.fields.date}>
+              <h3 className="font-bold">{change.fields.title}</h3>
+              <div className="flex">
+                <Tag tag={change.fields.typeOfChanges} />
+                <Tag tag={change.fields.section} />
+              </div>
+              <ReactMarkdown>{change.fields.content}</ReactMarkdown>
+            </Section>
+          );
+        })}
     </div>
   );
 };

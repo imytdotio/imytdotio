@@ -52,13 +52,11 @@ export const Home = (props) => {
       </Section>
 
       <Section header="Locate">
-        <div>
-          <img src={map} className="sm:h-96 h-48 object-cover rounded-xl " />
-          <p className="text-right mr-4 text-gray-400">
-            <FiMapPin className="inline mr-2" />
-            Hong Kong
-          </p>
-        </div>
+        <img src={map} className="sm:h-96 h-48 object-cover rounded-xl " />
+        <p className="mr-4 text-gray-400">
+          <FiMapPin className="inline mr-2" />
+          Hong Kong
+        </p>
       </Section>
 
       <Section header="History">

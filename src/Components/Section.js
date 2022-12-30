@@ -28,6 +28,7 @@ export const Section = (props) => {
   );
 };
 
+// Used in CV, don't delete
 export const SectionB = (props) => {
   return (
     <div
