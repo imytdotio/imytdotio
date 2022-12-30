@@ -40,7 +40,7 @@ export const Changelog = (props) => {
         section="Changelog.today"
       >
         🧠 Linktree type: changelog.today/{"{yourname}"}
-        <br /> 
+        <br />
       </Log>
       <Log date="2022-12-29" title="Changelog updated" section="imyt.io">
         ✅ Created Changelog <br />
@@ -53,7 +53,10 @@ export const Changelog = (props) => {
         🔺
         <br />
         🔻 <br />
-        ➕ <br />
+        ➕ More dynamic tags (Color Change!)
+        <br />
+        ➕ More dynamic tags
+        <br />
         <br /> Changelog 呢個 idea 係嚟自{" "}
         <a href="https://changelog.brianlovin.com/">BrianLovin</a>,
         其實呢個網嘅原形都係嚟自佢。我覺得 changelog 呢個 idea
