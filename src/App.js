@@ -13,7 +13,7 @@ import { CV } from "./Pages/CV";
 import { Test } from "./Pages/Test";
 // import { Footer } from "./Components/Footer";
 import { Changelog } from "./Pages/Changelog";
-import { Products_dumb } from "./Pages/Products_dumb";
+// import { Products_dumb } from "./Pages/Products_dumb";
 
 function App() {
   return (
@@ -31,8 +31,8 @@ function App() {
           <Route path="/products" exact>
             <Products />
           </Route>
-          <Route path="/productsd" exact>
-            <Products_dumb />
+          <Route path="/products" exact>
+            <Products />
           </Route>
           <Route path="/bets" exact>
             <Bets />

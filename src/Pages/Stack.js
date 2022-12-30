@@ -36,8 +36,7 @@ export const Stack = (props) => {
           — Alex Hormozi
         </a>
       </Callout>
-      <Section>
-        <SectionHeader>Programming</SectionHeader>
+      <Section header="Programming">
         <ul>
           <ListItem>
             <p>HKID Validator</p>
@@ -76,8 +75,7 @@ export const Stack = (props) => {
           </ListItem>
         </ul>
       </Section>
-      <Section>
-        <SectionHeader>3D Modeling</SectionHeader>
+      <Section header="3D Modeling">
         <ul>
           <p>Voxel</p>
         </ul>
