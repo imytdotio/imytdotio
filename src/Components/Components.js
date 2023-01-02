@@ -16,6 +16,14 @@ export const Callout = (props) => {
   );
 };
 
+export const Container = (props) => {
+  return (
+    <div className="lg:w-2/3 w-full m-auto text-left px-8">
+      {props.children}
+    </div>
+  );
+};
+
 export const H1 = (props) => {
   return <h1 className="text-6xl font-bold mb-8 mt-2">{props.children}</h1>;
 };

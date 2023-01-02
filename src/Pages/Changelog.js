@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Section } from "../Components/Section";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import { H1 } from "../Components/Components";
+import { H1, Container } from "../Components/Components";
 
 /**
  * @author
@@ -62,7 +62,7 @@ export const Changelog = (props) => {
   }, []);
 
   return (
-    <div className="lg:w-2/3 w-full m-auto text-left px-8">
+    <Container>
       <H1>🎞 Changelog</H1>
       {changes &&
         changes.map((change) => {
@@ -77,6 +77,6 @@ export const Changelog = (props) => {
             </Section>
           );
         })}
-    </div>
+    </Container>
   );
 };

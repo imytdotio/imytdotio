@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { H1 } from "../Components/Components";
+import { Container, H1 } from "../Components/Components";
 
 /**
  * @author
@@ -59,7 +59,7 @@ export const Products = (props) => {
     );
   };
   return (
-    <div className="lg:w-2/3 w-full m-auto text-left px-8">
+    <Container>
       <H1>📦 Products</H1>
       <ProductBlock
         title="Activity Ring"
@@ -96,6 +96,6 @@ export const Products = (props) => {
         thumbnail="https://public-files.gumroad.com/53ovs54wmikwtchmrmgsz4wcbwee"
         href="https://imyt.gumroad.com/l/prolific"
       />
-    </div>
+    </Container>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { BrowserRouter } from "react-router-dom";
-import { Callout, H1 } from "../Components/Components";
+import { Callout, H1, Container } from "../Components/Components";
 import { Section, SectionHeader } from "../Components/Section";
 
 /**
@@ -21,7 +21,7 @@ export const Bets = (props) => {
   }, []);
 
   return (
-    <div className="lg:w-2/3 w-full m-auto text-left px-8">
+    <Container>
       <H1>🎲 Bets</H1>
 
       <Callout emoji="💡" className="hidden lg:block">
@@ -62,6 +62,6 @@ export const Bets = (props) => {
       <Section header="HKStoicism">
         <p>Hello</p>
       </Section>
-    </div>
+    </Container>
   );
 };

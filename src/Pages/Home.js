@@ -4,7 +4,7 @@ import map from "../Assets/map.png";
 import { Section, SectionHeader } from "../Components/Section";
 import { Callout, H1 } from "../Components/Components";
 import { Footer } from "../Components/Footer";
-import { LinkButton } from "../Components/Components";
+import { LinkButton, Container } from "../Components/Components";
 import { NavLink } from "react-router-dom";
 
 /**
@@ -23,7 +23,7 @@ const Link = (props) => (
 );
 export const Home = (props) => {
   return (
-    <div className="lg:w-2/3 w-full m-auto text-left px-8">
+    <Container>
       <H1>🏠 Home</H1>
       {/* <Callout emoji="🎁" className="">
         <a href="https://imyt.gumroad.com/l/ring/free" target="_blank">
@@ -69,6 +69,6 @@ export const Home = (props) => {
         </ul>
       </Section>
       <Footer />
-    </div>
+    </Container>
   );
 };

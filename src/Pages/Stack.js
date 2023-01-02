@@ -1,6 +1,6 @@
 import React from "react";
 import { FiGithub, FiGlobe, FiLinkedin } from "react-icons/fi";
-import { Callout, H1, ListItem, Description } from "../Components/Components";
+import { Callout, H1, ListItem, Description, Container } from "../Components/Components";
 import { Section, SectionHeader } from "../Components/Section";
 
 /**
@@ -21,7 +21,7 @@ export const Stack = (props) => {
   const icon = "inline mr-2";
 
   return (
-    <div className="lg:w-2/3 w-full m-auto text-left px-8">
+    <Container>
       <H1>🧠 Stack</H1>
       <Callout emoji="💬" className="hidden lg:block">
         You don't become who you are by shouting affirmations in the mirror,{" "}
@@ -80,6 +80,6 @@ export const Stack = (props) => {
           <p>Voxel</p>
         </ul>
       </Section>
-    </div>
+    </Container>
   );
 };
