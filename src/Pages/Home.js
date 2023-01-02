@@ -5,6 +5,7 @@ import { Section, SectionHeader } from "../Components/Section";
 import { Callout, H1 } from "../Components/Components";
 import { Footer } from "../Components/Footer";
 import { LinkButton } from "../Components/Components";
+import { NavLink } from "react-router-dom";
 
 /**
  * @author
@@ -59,14 +60,14 @@ export const Home = (props) => {
         </p>
       </Section>
 
-      <Section header="History">
+      <Section header="Site Navigation">
         <ul>
-          <p>IMYT.IO</p>
-          <p>Learning React</p>
-          <p>Completed Coursera</p>
+          <p><NavLink to='/bets'>🎲 Bets</NavLink>: 所有我試過／未開始嘅 projects，成功、失敗、學到嘅事</p>
+          <p><NavLink to='/stack'>🧠 Stack</NavLink>: 我嘅技能，同埋我嘅技能證明 (i.e. Portfolio)</p>
+          <p><NavLink to='/bets'>📜 Manifesto</NavLink>: 所有我試過嘅 projects，成功、失敗、學到嘅事</p>
+          <p><NavLink to='/changelog'>🎞 Changelog</NavLink>: 我網站同埋我自己個人嘅更新記錄</p>
         </ul>
       </Section>
-      <LinkButton href="/changelog">🎞 Changelog</LinkButton>
       <Footer />
     </div>
   );
