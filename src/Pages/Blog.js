@@ -27,7 +27,7 @@ export const Blog = (props) => {
     setIsPending(false);
   }, []);
   return (
-    <div className="w-full text-left px-8">
+    <div className="lg:w-2/3 w-full m-auto text-left px-8">
       <H1>📝 Blog</H1>
 
       {isPending ? "Loading" : ""}

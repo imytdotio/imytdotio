@@ -22,7 +22,7 @@ const Link = (props) => (
 );
 export const Home = (props) => {
   return (
-    <div className="text-left px-8">
+    <div className="lg:w-2/3 w-full m-auto text-left px-8">
       <H1>🏠 Home</H1>
       {/* <Callout emoji="🎁" className="">
         <a href="https://imyt.gumroad.com/l/ring/free" target="_blank">
@@ -52,7 +52,7 @@ export const Home = (props) => {
       </Section>
 
       <Section header="Locate">
-        <img src={map} className="sm:h-96 h-48 object-cover rounded-xl " />
+        <img src={map} className="w-max object-cover rounded-xl " />
         <p className="mr-4 text-gray-400">
           <FiMapPin className="inline mr-2" />
           Hong Kong

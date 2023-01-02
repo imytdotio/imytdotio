@@ -21,7 +21,7 @@ export const Bets = (props) => {
   }, []);
 
   return (
-    <div className="w-full text-left px-8">
+    <div className="lg:w-2/3 w-full m-auto text-left px-8">
       <H1>🎲 Bets</H1>
 
       <Callout emoji="💡" className="hidden lg:block">

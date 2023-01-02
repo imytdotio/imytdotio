@@ -61,7 +61,7 @@ export const Changelog = (props) => {
   }, []);
 
   return (
-    <div className="w-full text-left px-8">
+    <div className="lg:w-2/3 w-full m-auto text-left px-8">
       {changes &&
         changes.map((change) => {
           return (

@@ -21,7 +21,7 @@ export const Stack = (props) => {
   const icon = "inline mr-2";
 
   return (
-    <div className="w-full text-left px-8">
+    <div className="lg:w-2/3 w-full m-auto text-left px-8">
       <H1>🧠 Stack</H1>
       <Callout emoji="💬" className="hidden lg:block">
         You don't become who you are by shouting affirmations in the mirror,{" "}
