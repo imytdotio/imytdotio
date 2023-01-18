@@ -19,7 +19,7 @@ export const Products = (props) => {
     var urlencoded = new URLSearchParams();
     urlencoded.append(
       "access_token",
-      "-UFgmqMkrEBqQAqNhZBuZAsj_8VdGIVig7Wg3Q0XkmY"
+      process.env.REACT_APP_GUMROAD_ACCESSTOKEN
     );
 
     var requestOptions = {
@@ -33,6 +33,7 @@ export const Products = (props) => {
       .then((response) => response.text())
       .then((result) => {
         setProducts(JSON.parse(result).products);
+        console.log(result);
       })
       .catch((error) => console.log("error", error));
   }, []);
