@@ -20,6 +20,7 @@ export const Products = (props) => {
     urlencoded.append(
       "access_token",
       process.env.REACT_APP_GUMROAD_ACCESSTOKEN
+      // "GBkpWKUanucLeRlvO-raE5r2G6AqaqTlb21sH7-5vdI"
     );
 
     var requestOptions = {
@@ -33,14 +34,14 @@ export const Products = (props) => {
       .then((response) => response.text())
       .then((result) => {
         setProducts(JSON.parse(result).products);
-        // console.log(result);
       })
       .catch((error) => console.log("error", error));
   }, []);
 
-  // useEffect(() => console.log(products), [products]);
+  useEffect(() => console.log(products), [products]);
 
   const ProductBlock = (props) => {
+    const dangerouslySetInnerHTML = props.description.substring(0, 99) + "...";
     return (
       <div className="bg-white hover:bg-gray-300 border-2 border-white hover:border-gray-900 duration-100  p-4 max-w-prose flex rounded-xl shadow-md mb-4">
         <a href={props.href} className="text-black flex w-full" target="_blank">
@@ -53,7 +54,10 @@ export const Products = (props) => {
             <p className="text-gray-600 text-sm ml-2 italic mb-2">
               {props.price}
             </p>
-            <p className="text-gray-600">{props.description}</p>
+            <p
+              className="text-gray-600"
+              dangerouslySetInnerHTML={{ __html: dangerouslySetInnerHTML }}
+            />
           </ul>
         </a>
       </div>
@@ -62,7 +66,19 @@ export const Products = (props) => {
   return (
     <Container>
       <H1>📦 Products</H1>
-      <ProductBlock
+      {products &&
+        products.map((product) => {
+          return (
+            <ProductBlock
+              title={product.name}
+              description={product.description}
+              price={product.formatted_price}
+              thumbnail={product.preview_url}
+              href={product.short_url}
+            />
+          );
+        })}
+      {/* <ProductBlock
         title="Activity Ring"
         description="An editible activity ring to track your habit / progress."
         price="$15"
@@ -96,7 +112,7 @@ export const Products = (props) => {
         price="$69"
         thumbnail="https://public-files.gumroad.com/53ovs54wmikwtchmrmgsz4wcbwee"
         href="https://imyt.gumroad.com/l/prolific"
-      />
+      /> */}
     </Container>
   );
 };
