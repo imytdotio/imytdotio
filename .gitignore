@@ -21,8 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-/src/config.js
-/.env
-
-/src/config/secretAPI.js

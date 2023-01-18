@@ -13,7 +13,7 @@ export const Products = (props) => {
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
     myHeaders.append(
       "Cookie",
-      "_gumroad_app_session=uGh36gDBu6fr5WbwrtZwyMmgo11G2pc8mY%2B6hNTpJg9uKaxDCBtJ8D%2FjxzUrFyZ9bLmkTXPmbLvnu5WaNPf4i3uUY5IW8v5W3GWmWMNciCwNKVLk3CHzOZHPD6CCjCtUwiOyK2kj1kef8L%2FaH7KWemxATcgFTft7HUnkFvDI4bR2n0G54SLrwhJn2yh%2FfWMCY6zbUT3fxU1lIQef11h1FWkNsuQMTab2heN6DZpZMj2RoDS786GSj6fiMqTQ75zqNmkR%2BQsc1N88kG3Mtf0LrTbhKPKg--TqODJ9izPooaAOBN--IYfBzYgsblJ3ymugzYli9g%3D%3D; _gumroad_guid=338b536f-a9c6-4087-836b-ff6e6f8e9531"
+      "_gumroad_app_session=3GgskA3GZP8ZcMpMzxHKJ8Oz6BKRu7k2Iau472ICnUoc%2Bq%2BJG8SaY9A267uo%2FxveRAjH%2BeZIpQQpUHIaiXK%2FDPE6kuSwUoujqgKfUO5v4ntq0I9vTuIl4yWFWjtUHvsAAAm1VMke7vDC0rkW5qXkgT7purLAbSxmjaHinov7Zp111vqHpLE3duP8FE%2Ftd%2B66oln68OzdQwdYYyO8jpGYGpX%2BL3CQgCzN8vmDORG3EP%2F4qSALGqccQAWrpPsOD3%2BkAMGihcn8tUunHOzGPnQ9PAg7%2FKC1--wzm%2F%2B6TznCXn1I0u--T0Tut%2BNvMtt2UKH4FxUSNw%3D%3D; _gumroad_guid=338b536f-a9c6-4087-836b-ff6e6f8e9531"
     );
 
     var urlencoded = new URLSearchParams();
@@ -38,7 +38,7 @@ export const Products = (props) => {
       .catch((error) => console.log("error", error));
   }, []);
 
-  useEffect(() => console.log(products), [products]);
+  // useEffect(() => console.log(products), [products]);
 
   const ProductBlock = (props) => {
     return (
