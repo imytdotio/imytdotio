@@ -1,19 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Container, H1 } from "../Components/Components";
-import { gumroadAPI } from "../Config/secretAPI";
 
 /**
  * @author
  * @function Products
  **/
 
-const secret =
-  process.env.REACT_APP_GUMROAD_ACCESSTOKEN == undefined ? gumroadAPI : "";
-
 export const Products = (props) => {
   const [products, setProducts] = useState();
   useEffect(() => {
-    console.log(secret);
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
     myHeaders.append(
@@ -22,7 +17,10 @@ export const Products = (props) => {
     );
 
     var urlencoded = new URLSearchParams();
-    urlencoded.append("access_token", secret);
+    urlencoded.append(
+      "access_token",
+      process.env.REACT_APP_GUMROAD_ACCESSTOKEN
+    );
 
     var requestOptions = {
       method: "GET",
