@@ -13,14 +13,13 @@ export const Products = (props) => {
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
     myHeaders.append(
       "Cookie",
-      "_gumroad_app_session=3GgskA3GZP8ZcMpMzxHKJ8Oz6BKRu7k2Iau472ICnUoc%2Bq%2BJG8SaY9A267uo%2FxveRAjH%2BeZIpQQpUHIaiXK%2FDPE6kuSwUoujqgKfUO5v4ntq0I9vTuIl4yWFWjtUHvsAAAm1VMke7vDC0rkW5qXkgT7purLAbSxmjaHinov7Zp111vqHpLE3duP8FE%2Ftd%2B66oln68OzdQwdYYyO8jpGYGpX%2BL3CQgCzN8vmDORG3EP%2F4qSALGqccQAWrpPsOD3%2BkAMGihcn8tUunHOzGPnQ9PAg7%2FKC1--wzm%2F%2B6TznCXn1I0u--T0Tut%2BNvMtt2UKH4FxUSNw%3D%3D; _gumroad_guid=338b536f-a9c6-4087-836b-ff6e6f8e9531"
+      "_gumroad_app_session=QCLL0923RX2l2qrh7SvsHxX7TJ9eSQDafs1spXWuTozAl%2By54WlxENx98D%2BdaeGRXjxf%2B3jV%2FbYo6JdSU9fejAMmFMfp5P3kdTL3Qm2Av2EFh5%2B1L93xm%2FsqB9iHkpXybv3O3Zr9vzIqeZMO%2Foe%2Bk6FsgrimImbrg9h0wYpGkxXCIjOO3mnVADEGfK8Y4ofe0kpBwmR9tPHJDF%2BlUc2nrMBmJfUdKInqSAqn0VwOtdnmQR8dFDEbOMYhnKoFpB9xZAhUezwMcNQ%2FzFEe7B%2Ba2MJl%2Bect--RxHC%2F76R1Nde6SSA--II%2BO%2F%2FhgsJbWjq4AfSrnRA%3D%3D; _gumroad_guid=338b536f-a9c6-4087-836b-ff6e6f8e9531; _mkra_stck=mysql%3A1674023977.9729364"
     );
 
     var urlencoded = new URLSearchParams();
     urlencoded.append(
       "access_token",
       process.env.REACT_APP_GUMROAD_ACCESSTOKEN
-      // "GBkpWKUanucLeRlvO-raE5r2G6AqaqTlb21sH7-5vdI"
     );
 
     var requestOptions = {
@@ -43,7 +42,7 @@ export const Products = (props) => {
   const ProductBlock = (props) => {
     const dangerouslySetInnerHTML = props.description.substring(0, 99) + "...";
     return (
-      <div className="bg-white hover:bg-gray-300 border-2 border-white hover:border-gray-900 duration-100  p-4 max-w-prose flex rounded-xl shadow-md mb-4">
+      <div key={props.href} className="bg-white hover:bg-gray-300 border-2 border-white hover:border-gray-900 duration-100  p-4 max-w-prose flex rounded-xl shadow-md mb-4">
         <a href={props.href} className="text-black flex w-full" target="_blank">
           <img
             src={props.thumbnail}
