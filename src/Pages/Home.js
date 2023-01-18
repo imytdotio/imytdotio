@@ -53,7 +53,7 @@ export const Home = (props) => {
       </Section>
 
       <Section header="Locate">
-        <img src={map} className="w-max object-cover rounded-xl " />
+        <img src={map} className="w-max object-cover rounded-xl" alt='Hong Kong Map' />
         <p className="mr-4 text-gray-400">
           <FiMapPin className="inline mr-2" />
           Hong Kong
