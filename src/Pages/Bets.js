@@ -46,7 +46,7 @@ export const Bets = (props) => {
   const BetsBox = (props) => {
     return (
       <button
-        className="w-full bg-white rounded-xl shadow-md md:p-4 p-2  min-w-[96px] xl:min-w-[128px] xl:min-h-[128px] border-2 border-white hover:border-black hover:bg-gray-100 duration-200 box-content"
+        className="w-full bg-white rounded-3xl shadow-md md:p-4 p-2 min-w-[96px] xl:min-w-[128px] xl:min-h-[128px] border-2 border-white hover:border-black hover:bg-gray-100 duration-200 box-content"
         onClick={() => setContent(props.onClick)}
       >
         <p className="text-6xl mb-4">{props.emoji}</p>
