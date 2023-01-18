@@ -33,9 +33,9 @@ export const SimpleNav = (props) => {
       <NavLink to="/products" className={nav} activeClassName={active}>
         📦
       </NavLink>
-      <NavLink to="/manifesto" className={nav} activeClassName={active}>
+      {/* <NavLink to="/manifesto" className={nav} activeClassName={active}>
         📜
-      </NavLink>
+      </NavLink> */}
       {/* <NavLink to="/changelog" className={nav} activeClassName={active}>
         🎞
       </NavLink> */}

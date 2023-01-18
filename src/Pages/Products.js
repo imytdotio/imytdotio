@@ -42,11 +42,16 @@ export const Products = (props) => {
   const ProductBlock = (props) => {
     const dangerouslySetInnerHTML = props.description.substring(0, 99) + "...";
     return (
-      <div key={props.href} className="bg-white hover:bg-gray-300 border-2 border-white hover:border-gray-900 duration-100  p-4 max-w-prose flex rounded-xl shadow-md mb-4">
-        <a href={props.href} className="text-black flex w-full" target="_blank">
+      <div className="bg-white hover:bg-gray-300 border-2 border-white hover:border-gray-900 duration-100  p-4 max-w-prose rounded-xl shadow-md mb-4">
+        <a
+          href={props.href}
+          className="text-black flex flex-col md:flex md:flex-row w-full duration-200"
+          target="_blank"
+        >
           <img
             src={props.thumbnail}
-            className="w-48 hidden md:block rounded-xl mr-8 object-cover"
+            className="w-full mb-4 md:mb-0 md:w-48 rounded-xl mr-8 object-cover duration-200 shadow-md md:shadow-none"
+            // className="hidden md:block w-48 rounded-xl mr-8 object-cover"
           />
           <ul>
             <h1 className="font-bold">{props.title}</h1>
@@ -69,6 +74,7 @@ export const Products = (props) => {
         products.map((product) => {
           return (
             <ProductBlock
+              key={product.short_url}
               title={product.name}
               description={product.description}
               price={product.formatted_price}
