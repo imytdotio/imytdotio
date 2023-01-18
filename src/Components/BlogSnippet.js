@@ -33,7 +33,7 @@ export const BlogSnippet = (props) => {
   return (
     // <div className="bg-white inline-block p-4 rounded-xl shadow-md">
     <a
-      className="border-b-2 border-gray-600 xl:w-2/3 w-full p-2 flex hover:bg-white duration-200"
+      className="border-b-2 border-gray-600  p-2 flex hover:bg-white duration-200"
       href={props.link}
       target="_blank"
     >

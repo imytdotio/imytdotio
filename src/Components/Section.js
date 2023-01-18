@@ -23,7 +23,7 @@ export const Section = (props) => {
       >
         {props.header}
       </h3>
-      <p className="col-span-10 max-w-prose">{props.children}</p>
+      <div className="col-span-10 max-w-prose">{props.children}</div>
     </div>
   );
 };

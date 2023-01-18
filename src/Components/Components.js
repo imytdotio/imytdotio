@@ -18,7 +18,7 @@ export const Callout = (props) => {
 
 export const Container = (props) => {
   return (
-    <div className="lg:w-2/3 w-full m-auto text-left px-8">
+    <div className="md:w-2/3 w-full m-auto text-left px-8">
       {props.children}
     </div>
   );
