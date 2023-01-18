@@ -1,6 +1,6 @@
 import React from "react";
 import { FiMapPin } from "react-icons/fi";
-import map from "../Assets/map.png";
+import map from "../Assets/map.webp";
 import { Section, SectionHeader } from "../Components/Section";
 import { Callout, H1 } from "../Components/Components";
 import { Footer } from "../Components/Footer";
