@@ -32,7 +32,9 @@ const BasicStatistics = (props) => {
 };
 
 const H3 = (props) => {
-  return <h3 className="font-bold">{props.title}</h3>;
+  return (
+    <h3 className="font-bold text-center w-full md:w-2/3">{props.title}</h3>
+  );
 };
 
 export const Imytdotio = (props) => {
@@ -107,14 +109,28 @@ export const ActivityRing = (props) => {
     </Container>
   );
 };
-export const MarvelousCalculator = (props) => {
-  return <Container header="Marvelous Calculator"></Container>;
-};
-export const MarvelousWeather = (props) => {
-  return <Container header="Marvelous Weather"></Container>;
-};
-export const MarvelousTodo = (props) => {
-  return <Container header="Marvelous Todo"></Container>;
+export const MarvelousApps = (props) => {
+  return (
+    <Container header="Marvelous Apps">
+      <Section header="Original Idea">
+        <p>
+          最原本會想做呢堆 Marvelous Apps 係因為想練習自己嘅 programming
+          skills。每學完一個位，就會想練吓啲
+          skill。以前都會嘅，但係係未去到一個有足夠技能嘅位就想 build
+          一啲超乎我能力嘅 App。而家我學到少少，就 build
+          啲練嘢，呢三個就係其中三個。
+        </p>
+        <p>
+          但有趣嘅係，其實我都仲未 build 到完成呢三個，因為喺過程中，我有又其他
+          Ideas，咁我就又開新 project，又試新嘢。Changelog 同埋 e-book
+          都係例子。
+        </p>
+      </Section>
+      <H3 title="Marvelous Calculator" />
+      <H3 title="Marvelous Todo" />
+      <H3 title="Marvelous Weather" />
+    </Container>
+  );
 };
 
 export const HKStoicism = (props) => {
@@ -128,4 +144,7 @@ export const ProgrammingCerts = (props) => {
 };
 export const DataScience = (props) => {
   return <Container header="Data Science"></Container>;
+};
+export const WriteYourFirstBook = (props) => {
+  return <Container header="Write Your First Book"></Container>;
 };

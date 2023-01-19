@@ -10,14 +10,13 @@ import {
   EBook,
   HKStoicism,
   Imytdotio,
-  MarvelousCalculator,
-  MarvelousTodo,
-  MarvelousWeather,
+  MarvelousApps,
   OPC,
   Planner,
   ProgrammingCerts,
   Prolific,
   StudyNomad,
+  WriteYourFirstBook,
 } from "../Content/BetsContent";
 
 /**
@@ -77,21 +76,12 @@ export const Bets = (props) => {
         {/* <BetsBox emoji="⛺️" title="Study Nomad" onClick={<StudyNomad />} /> */}
         {/* <BetsBox emoji="🪪" title="HK-ID Validator" /> */}
         <BetsBox emoji="🔘" title="Activity Ring" onClick={<ActivityRing />} />
-        {/* <BetsBox
-          emoji="🧮"
-          title="marvelous-calculator"
-          onClick={<MarvelousCalculator />}
-        />
         <BetsBox
-          emoji="🌦"
-          title="marvelous-weather"
-          onClick={<MarvelousWeather />}
+          emoji="✨"
+          title="marvelous-apps"
+          onClick={<MarvelousApps />}
         />
-        <BetsBox
-          emoji="✅"
-          title="marvelous-todo"
-          onClick={<MarvelousTodo />}
-        /> */}
+
         <BetsBox emoji="🗿" title="HK-Stoicism" onClick={<HKStoicism />} />
         <BetsBox emoji="🎞" title="Changelog" onClick={<Changelog />} />
         <BetsBox
@@ -100,6 +90,7 @@ export const Bets = (props) => {
           onClick={<ProgrammingCerts />}
         />
         <BetsBox emoji="🔢" title="Data Science" onClick={<DataScience />} />
+        <BetsBox emoji="📖" title="Write your first book" onClick={<WriteYourFirstBook />} />
       </div>
       {content}
 
