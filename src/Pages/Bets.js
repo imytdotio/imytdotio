@@ -58,7 +58,7 @@ export const Bets = (props) => {
     <Container>
       <H1>🎲 Bets</H1>
 
-      <Callout emoji="💡" className="hidden md:block">
+      <Callout emoji="💡" className="hidden lg:block">
         Bets
         直譯成中文的話應該是賭博，但準確來說，我想表達的意思，更像是實驗🧪。
         <br />
@@ -67,7 +67,7 @@ export const Bets = (props) => {
         <b>有機會成功，有機會失敗，Who knows?</b>
       </Callout>
 
-      <div className="overflow-x-auto flex gap-4 h-full m-2 mb-4 py-2 xl:w-prose scrollbar-hide">
+      <div className="overflow-x-auto flex gap-4 h-48 m-2 mb-4 py-2 lg:w-prose scrollbar-hide">
         <BetsBox emoji="💬" title="imyt.io @IG" onClick={<Imytdotio />} />
         <BetsBox emoji="✍️" title="Prolific Writer" onClick={<Prolific />} />
         <BetsBox emoji="⭕️" title="One Percent Circle" onClick={<OPC />} />

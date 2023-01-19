@@ -17,13 +17,15 @@ import { Changelog } from "./Pages/Changelog";
 
 function App() {
   return (
-    // <div className="App my-16 flex m-auto">
-    <div className="App my-16 m-auto">
+    <div className="App my-16 flex lg:flex-row flex-col m-auto">
+      {/* <div className="App my-16 m-auto"> */}
       <BrowserRouter>
-        <SimpleNav />
-        {/* <div className="collapse lg:visible">
+        <div className="lg:collapse visible">
+          <SimpleNav />
+        </div>
+        <div className="collapse lg:visible">
           <Nav />
-        </div> */}
+        </div>
         <Switch>
           <Route path="/" exact>
             <Home />

@@ -18,7 +18,7 @@ export const Callout = (props) => {
 
 export const Container = (props) => {
   return (
-    <div className="md:w-2/3 w-full m-auto text-left px-8 scrollbar-hide duration-200">
+    <div className="lg:w-2/3 w-full mx-auto text-left px-8 scrollbar-hide duration-200">
       {props.children}
     </div>
   );
