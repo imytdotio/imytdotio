@@ -18,7 +18,7 @@ const active =
 
 export const SimpleNav = (props) => {
   return (
-    <div className="bg-white m-8 m-auto py-8 px-2 rounded-xl mb-16">
+    <div className="w-full bg-white m-8 m-auto py-8 px-2 rounded-xl mb-16">
       <NavLink to="/" exact className={nav} activeClassName={active}>
         🏠
       </NavLink>

@@ -20,10 +20,10 @@ function App() {
     <div className="App my-16 flex lg:flex-row flex-col m-auto">
       {/* <div className="App my-16 m-auto"> */}
       <BrowserRouter>
-        <div className="lg:collapse visible">
+        <div className="flex lg:hidden">
           <SimpleNav />
         </div>
-        <div className="collapse lg:visible">
+        <div className="lg:flex hidden">
           <Nav />
         </div>
         <Switch>
