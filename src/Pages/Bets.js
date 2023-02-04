@@ -5,6 +5,7 @@ import { Callout, H1, Container } from "../Components/Components";
 import { Section, SectionHeader } from "../Components/Section";
 import {
   ActivityRing,
+  BulletWriter,
   Changelog,
   DataScience,
   EBook,
@@ -16,7 +17,6 @@ import {
   ProgrammingCerts,
   Prolific,
   StudyNomad,
-  WriteYourFirstBook,
 } from "../Content/BetsContent";
 
 /**
@@ -26,21 +26,6 @@ import {
 
 export const Bets = (props) => {
   const [content, setContent] = useState(<Imytdotio />);
-
-  // switch (content) {
-  //   case "imyt.io":
-  //     return <p>imyt.io</p>;
-  //   case "prolific writer":
-  //     return <p>Prolific</p>;
-  // }
-  // useEffect(() => {
-  //   import("../Blog/bets/imyt.io.md").then((res) => {
-  //     fetch(res.default)
-  //       .then((res) => res.text())
-  //       .then((res) => setContent(res))
-  //       .catch((err) => console.log(err));
-  //   });
-  // }, []);
 
   const BetsBox = (props) => {
     return (
@@ -69,9 +54,11 @@ export const Bets = (props) => {
 
       <div className="overflow-x-auto flex gap-4 h-48 m-2 mb-4 py-2 lg:w-prose scrollbar-hide">
         <BetsBox emoji="💬" title="imyt.io @IG" onClick={<Imytdotio />} />
-        <BetsBox emoji="✍️" title="Prolific Writer" onClick={<Prolific />} />
         <BetsBox emoji="⭕️" title="One Percent Circle" onClick={<OPC />} />
+        <BetsBox emoji="🎞" title="Changelog" onClick={<Changelog />} />
+        <BetsBox emoji="📖" title="BulletWriter" onClick={<BulletWriter />} />
         <BetsBox emoji="🕔" title="5 am e-book" onClick={<EBook />} />
+        <BetsBox emoji="✍️" title="Prolific Writer" onClick={<Prolific />} />
         <BetsBox emoji="⏰" title="Planner" onClick={<Planner />} />
         {/* <BetsBox emoji="⛺️" title="Study Nomad" onClick={<StudyNomad />} /> */}
         {/* <BetsBox emoji="🪪" title="HK-ID Validator" /> */}
@@ -83,14 +70,12 @@ export const Bets = (props) => {
         />
 
         <BetsBox emoji="🗿" title="HK-Stoicism" onClick={<HKStoicism />} />
-        <BetsBox emoji="🎞" title="Changelog" onClick={<Changelog />} />
         <BetsBox
           emoji="📃"
           title="Programming Certificates"
           onClick={<ProgrammingCerts />}
         />
         <BetsBox emoji="🔢" title="Data Science" onClick={<DataScience />} />
-        <BetsBox emoji="📖" title="Write your first book" onClick={<WriteYourFirstBook />} />
       </div>
       {content}
 
