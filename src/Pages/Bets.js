@@ -56,7 +56,7 @@ export const Bets = (props) => {
         <BetsBox emoji="💬" title="imyt.io @IG" onClick={<Imytdotio />} />
         <BetsBox emoji="⭕️" title="One Percent Circle" onClick={<OPC />} />
         <BetsBox emoji="🎞" title="Changelog" onClick={<Changelog />} />
-        <BetsBox emoji="📖" title="BulletWriter" onClick={<BulletWriter />} />
+        <BetsBox emoji="⚡️" title="BulletWriter" onClick={<BulletWriter />} />
         <BetsBox emoji="🕔" title="5 am e-book" onClick={<EBook />} />
         <BetsBox emoji="✍️" title="Prolific Writer" onClick={<Prolific />} />
         <BetsBox emoji="⏰" title="Planner" onClick={<Planner />} />
