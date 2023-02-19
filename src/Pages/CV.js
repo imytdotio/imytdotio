@@ -180,11 +180,30 @@ const Skills = () => (
     <SectionHeader>Skills</SectionHeader>
     <ul>
       <ListItem>
-        <p>ReactJS</p>
+        <p>Content creation and writing</p>
+        <Description>
+          <FiZoomIn className="inline-block mr-2 mb-1" />
+          <a
+            href="https://www.instagram.com/imyt.io"
+            target="_blank"
+            className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
+          >
+            Instagram
+          </a>
+        </Description>
+      </ListItem>
+      <ListItem>
+        <p>Marketing Strategy Development & Execution</p>
+      </ListItem>
+      <ListItem>
+        <p>
+          Web development <strong>(ReactJS, Firebase, Supabase...)</strong>
+        </p>
         <Description>
           <FiZoomIn className="inline-block mr-2 mb-1" />
           <a
             href="https://www.github.com/imytdotio"
+            target="_blank"
             className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
           >
             Github
@@ -193,34 +212,58 @@ const Skills = () => (
         <Description>
           <FiZoomIn className="inline-block mr-2 mb-1" />
           <a
-            href="https://www.hkid.vercel.app/"
+            href="https://flow-booking.vercel.app"
+            target="_blank"
             className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
           >
-            HKID Validator
+            Flow-booking app (Room Booking)
+          </a>
+        </Description>
+        <Description>
+          <FiZoomIn className="inline-block mr-2 mb-1" />
+          <a
+            href="https://flow-worship.vercel.app"
+            target="_blank"
+            className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
+          >
+            Flow-worship app (HR management)
+          </a>
+        </Description>
+      </ListItem>
+
+      <ListItem>
+        <p>Scripting</p>
+        <Description>
+          <FiZoomIn className="inline-block mr-2 mb-1" />
+          <a
+            href="https://github.com/imytdotio/Scripts/tree/master/google%20sheet%20to%20gogole%20docs%20receipt"
+            target="_blank"
+            className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
+          >
+            Spreadshete to Receipts
+          </a>
+        </Description>
+        <Description>
+          <FiZoomIn className="inline-block mr-2 mb-1" />
+          <a
+            href="https://hkid.vercel.app"
+            target="_blank"
+            className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
+          >
+            HKID verification tool
           </a>
         </Description>
       </ListItem>
       <ListItem>
-        <p>UI Design</p>
+        <p>Scripting</p>
         <Description>
           <FiZoomIn className="inline-block mr-2 mb-1" />
           <a
-            href="https://www.dribbble.com/imyt"
+            href="https://www.instagram.com/explore/tags/imyt_readinghut/"
+            target="_blank"
             className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
           >
-            Dribbble
-          </a>
-        </Description>
-      </ListItem>
-      <ListItem>
-        <p>Video Editing</p>
-        <Description>
-          <FiZoomIn className="inline-block mr-2 mb-1" />
-          <a
-            href="https://www.youtube.com/@imyt"
-            className="mr-2 text-b hover:border-b-2 hover:border-blue-400 duration-200"
-          >
-            Youtube
+            What have I read?
           </a>
         </Description>
       </ListItem>
@@ -232,14 +275,14 @@ export const CV = (props) => {
   return (
     <div className="w-full text-left px-8">
       <H1>🤠 Hi, I am Jeffrey.</H1>
-      <LinkButton href="https://www.dropbox.com/s/r474gab7vxgnhlu/ChengChiLap_CV.pdf?dl=1">
+      <LinkButton href="https://www.dropbox.com/s/0vs4o0ffr2dmw48/ChengChiLap_CV.pdf?dl=1">
         Download PDF
       </LinkButton>
 
       <WorkExperience />
       <Education />
-      <Certification />
       <Skills />
+      <Certification />
     </div>
   );
 };
