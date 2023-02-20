@@ -197,7 +197,7 @@ const Skills = () => (
       </ListItem>
       <ListItem>
         <p>
-          Web development <strong>(ReactJS, Firebase, Supabase...)</strong>
+          App development <strong>(ReactJS, Flutter, Python, SQL, Firebase, Supabase...)</strong>
         </p>
         <Description>
           <FiZoomIn className="inline-block mr-2 mb-1" />
@@ -275,7 +275,7 @@ export const CV = (props) => {
   return (
     <div className="w-full text-left px-8">
       <H1>🤠 Hi, I am Jeffrey.</H1>
-      <LinkButton href="https://www.dropbox.com/s/0vs4o0ffr2dmw48/ChengChiLap_CV.pdf?dl=1">
+      <LinkButton href="https://www.dropbox.com/s/bwmkf1uzj51x6f8/ChengChiLap_CV.pdf?dl=1">
         Download PDF
       </LinkButton>
 
