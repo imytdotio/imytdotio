@@ -38,6 +38,18 @@ export const SectionB = (props) => {
     </div>
   );
 };
+export const SectionC = (props) => {
+  return (
+    <div className="my-8 ">
+      <h2 className="font-bold text-lg">{props.title}</h2>
+      <div
+        className={`flex flex-col lg:w-2/3`}
+      >
+        {props.children}
+      </div>
+    </div>
+  );
+};
 
 export const SectionHeader = (props) => (
   <h3 className={`w-24 mr-8 text-gray-400 ${props.className}`}>

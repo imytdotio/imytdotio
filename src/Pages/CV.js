@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  FiCalendar,
-  FiGithub,
-  FiGlobe,
-  FiMapPin,
-  FiZoomIn,
-} from "react-icons/fi";
+import { FiCalendar, FiMapPin, FiZoomIn } from "react-icons/fi";
 import { SectionB, SectionHeader } from "../Components/Section";
 import { H1 } from "../Components/Components";
 import { LinkButton } from "../Components/Components";
@@ -19,7 +13,7 @@ const Description = (props) => {
   return (
     <p
       className={`ml-2 text-gray-600 text-small ${props.className} ${
-        props.text ? "mt-2" : ""
+        props.text ? "" : ""
       }`}
     >
       {props.children}
@@ -27,7 +21,7 @@ const Description = (props) => {
   );
 };
 const ListItem = (props) => {
-  return <li className="mb-2">{props.children}</li>;
+  return <li className="mb-4">{props.children}</li>;
 };
 
 const Education = () => (
@@ -64,6 +58,83 @@ const WorkExperience = () => (
     <SectionHeader>Work Experience</SectionHeader>
     <ul>
       <ListItem>
+        <p>Solo App Developer </p>
+        <Description>
+          <FiCalendar className="inline-block mr-2 mb-1" />
+          Aug 2022 ~ Now
+        </Description>
+        <Description text>
+          Utilized{" "}
+          <strong>ReactJS, Tailwindcss, and Supabase / Firebase</strong> to
+          develop a room booking web app, an <strong>HR management tool</strong>{" "}
+          for a church's worship team, and various other projects. Also
+          developed a simple <strong>script</strong> for converting Excel sheets
+          to receipts and an app for validating and generating HKIDs.
+        </Description>
+      </ListItem>
+
+      <ListItem>
+        <p>
+          <strong>#</strong> Room Booking App
+        </p>
+        <Description text>
+          <strong>Idea: </strong>Streamline room bookings for pastors.
+        </Description>
+        <Description text>
+          <strong>How to use: </strong>View real-time room availability and book
+          a room directly through the app. Admin workers will approve the
+          booking.
+        </Description>
+        <Description text>
+          <strong>Problem Solved: </strong>Saves time and simplifies the booking
+          process for pastors.
+        </Description>
+      </ListItem>
+
+      <ListItem>
+        <p>
+          <strong>#</strong> HR Management App
+        </p>
+        <Description text>
+          <strong>Idea: </strong>Streamline HR management for a 30-person team
+          with different skills and roles, specifically for creating worship
+          team rosters.
+        </Description>
+        <Description text>
+          <strong>How to use: </strong>Team members update their availability
+          for each Saturday through the app. The app displays available team
+          members by role, and the admin worker selects team members for each
+          role to create the roster.
+        </Description>
+        <Description text>
+          <strong>Problem Solved: </strong>Simplifies team availability
+          management, saves time, and ensures a fully staffed and prepared
+          worship team for each service by creating an efficient and accurate
+          roster.
+        </Description>
+      </ListItem>
+
+      <ListItem>
+        <p>
+          <strong>#</strong> Excel Automation
+        </p>
+        <Description text>
+          <strong>Idea: </strong>Automate receipt generation by converting
+          Google Sheets entries into Google Docs receipts.
+        </Description>
+        <Description text>
+          <strong>How to use: </strong>Enter data into a Google Form, and a new
+          receipt is automatically generated in Google Docs based on the
+          corresponding Google Sheets entry.
+        </Description>
+        <Description text>
+          <strong>Problem Solved: </strong>Streamlines receipt generation,
+          reduces the risk of human error, and saves valuable time and
+          resources.
+        </Description>
+      </ListItem>
+
+      <ListItem>
         <p>
           Solo Content Creator at{" "}
           <a
@@ -82,6 +153,14 @@ const WorkExperience = () => (
           Created and managed a successful Instagram page focused on building
           habits, productivity, and discipline, gaining{" "}
           <strong>2,000 followers</strong>.
+        </Description>
+        <Description text>
+          <strong>Idea: </strong>A web app for managing the HR of a church's
+          worship team.
+        </Description>
+        <Description text>
+          <strong>Usage: </strong>A web app for managing the HR of a church's
+          worship team.
         </Description>
       </ListItem>
       <ListItem>
@@ -107,21 +186,6 @@ const WorkExperience = () => (
           and <strong>marketing strategies</strong>, resulting in over{" "}
           <strong>500,000</strong>
           views for the startup's vtuber collaboration web app.
-        </Description>
-      </ListItem>
-      <ListItem>
-        <p>Solo App Developer </p>
-        <Description>
-          <FiCalendar className="inline-block mr-2 mb-1" />
-          Aug 2022 ~ Now
-        </Description>
-        <Description text>
-          Utilized{" "}
-          <strong>ReactJS, Tailwindcss, and Supabase / Firebase</strong> to
-          develop a room booking web app, an <strong>HR management tool</strong>{" "}
-          for a church's worship team, and various other projects. Also
-          developed a simple <strong>script</strong> for converting Excel sheets
-          to receipts and an app for validating and generating HKIDs.
         </Description>
       </ListItem>
     </ul>
@@ -197,7 +261,10 @@ const Skills = () => (
       </ListItem>
       <ListItem>
         <p>
-          App development <strong>(ReactJS, Flutter, Python, SQL, Firebase, Supabase...)</strong>
+          App development{" "}
+          <strong>
+            (ReactJS, Flutter, Python, SQL, Firebase, Supabase...)
+          </strong>
         </p>
         <Description>
           <FiZoomIn className="inline-block mr-2 mb-1" />
@@ -255,7 +322,7 @@ const Skills = () => (
         </Description>
       </ListItem>
       <ListItem>
-        <p>Scripting</p>
+        <p>Self-driven</p>
         <Description>
           <FiZoomIn className="inline-block mr-2 mb-1" />
           <a
@@ -265,6 +332,21 @@ const Skills = () => (
           >
             What have I read?
           </a>
+        </Description>
+      </ListItem>
+      <ListItem>
+        <p>Language Skills</p>
+        <Description>
+          <FiZoomIn className="inline-block mr-2 mb-1" />
+          Cantonese: Native
+        </Description>
+        <Description>
+          <FiZoomIn className="inline-block mr-2 mb-1" />
+          English: Fluent
+        </Description>
+        <Description>
+          <FiZoomIn className="inline-block mr-2 mb-1" />
+          Mandarin: Fluent
         </Description>
       </ListItem>
     </ul>
