@@ -109,14 +109,6 @@ const WorkExperience = () => (
           habits, productivity, and discipline, gaining{" "}
           <strong>2,000 followers</strong>.
         </Description>
-        <Description text>
-          <strong>Idea: </strong>A web app for managing the HR of a church's
-          worship team.
-        </Description>
-        <Description text>
-          <strong>Usage: </strong>A web app for managing the HR of a church's
-          worship team.
-        </Description>
       </ListItem>
       <ListItem>
         <p>
