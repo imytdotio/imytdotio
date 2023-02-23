@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiCalendar, FiMapPin, FiZoomIn } from "react-icons/fi";
 import { SectionB, SectionHeader } from "../Components/Section";
 import { H1 } from "../Components/Components";
@@ -22,6 +22,17 @@ const Description = (props) => {
 };
 const ListItem = (props) => {
   return <li className="mb-4">{props.children}</li>;
+};
+const Toggle = (props) => {
+  const [show, setShow] = useState(false);
+  return (
+    <div>
+      <button onClick={() => setShow(!show)}>
+        {show ? "🔽" : "▶️"} {props.title}
+      </button>
+      {show && props.element}
+    </div>
+  );
 };
 
 const Education = () => (
@@ -71,66 +82,10 @@ const WorkExperience = () => (
           developed a simple <strong>script</strong> for converting Excel sheets
           to receipts and an app for validating and generating HKIDs.
         </Description>
-      </ListItem>
-
-      <ListItem>
-        <p>
-          <strong>#</strong> Room Booking App
-        </p>
-        <Description text>
-          <strong>Idea: </strong>Streamline room bookings for pastors.
-        </Description>
-        <Description text>
-          <strong>How to use: </strong>View real-time room availability and book
-          a room directly through the app. Admin workers will approve the
-          booking.
-        </Description>
-        <Description text>
-          <strong>Problem Solved: </strong>Saves time and simplifies the booking
-          process for pastors.
-        </Description>
-      </ListItem>
-
-      <ListItem>
-        <p>
-          <strong>#</strong> HR Management App
-        </p>
-        <Description text>
-          <strong>Idea: </strong>Streamline HR management for a 30-person team
-          with different skills and roles, specifically for creating worship
-          team rosters.
-        </Description>
-        <Description text>
-          <strong>How to use: </strong>Team members update their availability
-          for each Saturday through the app. The app displays available team
-          members by role, and the admin worker selects team members for each
-          role to create the roster.
-        </Description>
-        <Description text>
-          <strong>Problem Solved: </strong>Simplifies team availability
-          management, saves time, and ensures a fully staffed and prepared
-          worship team for each service by creating an efficient and accurate
-          roster.
-        </Description>
-      </ListItem>
-
-      <ListItem>
-        <p>
-          <strong>#</strong> Excel Automation
-        </p>
-        <Description text>
-          <strong>Idea: </strong>Automate receipt generation by converting
-          Google Sheets entries into Google Docs receipts.
-        </Description>
-        <Description text>
-          <strong>How to use: </strong>Enter data into a Google Form, and a new
-          receipt is automatically generated in Google Docs based on the
-          corresponding Google Sheets entry.
-        </Description>
-        <Description text>
-          <strong>Problem Solved: </strong>Streamlines receipt generation,
-          reduces the risk of human error, and saves valuable time and
-          resources.
+        <Description>
+          <Toggle title="Room Booking App" element={<RoomBookingApp />} />
+          <Toggle title="HR Management App" element={<HRManagementApp />} />
+          <Toggle title="Excel Automation" element={<ExcelAutomation />} />
         </Description>
       </ListItem>
 
@@ -352,6 +307,67 @@ const Skills = () => (
     </ul>
   </SectionB>
 );
+
+// Projects
+const RoomBookingApp = () => {
+  return (
+    <>
+      <Description text>
+        <strong>Idea: </strong>Streamline room bookings for pastors.
+      </Description>
+      <Description text>
+        <strong>How to use: </strong>View real-time room availability and book a
+        room directly through the app. Admin workers will approve the booking.
+      </Description>
+      <Description text>
+        <strong>Problem Solved: </strong>Saves time and simplifies the booking
+        process for pastors.
+      </Description>
+    </>
+  );
+};
+const HRManagementApp = () => {
+  return (
+    <>
+      <Description text>
+        <strong>Idea: </strong>Streamline HR management for a 30-person team
+        with different skills and roles, specifically for creating worship team
+        rosters.
+      </Description>
+      <Description text>
+        <strong>How to use: </strong>Team members update their availability for
+        each Saturday through the app. The app displays available team members
+        by role, and the admin worker selects team members for each role to
+        create the roster.
+      </Description>
+      <Description text>
+        <strong>Problem Solved: </strong>Simplifies team availability
+        management, saves time, and ensures a fully staffed and prepared worship
+        team for each service by creating an efficient and accurate roster.
+      </Description>
+    </>
+  );
+};
+const ExcelAutomation = () => {
+  return (
+    <>
+      {" "}
+      <Description text>
+        <strong>Idea: </strong>Automate receipt generation by converting Google
+        Sheets entries into Google Docs receipts.
+      </Description>
+      <Description text>
+        <strong>How to use: </strong>Enter data into a Google Form, and a new
+        receipt is automatically generated in Google Docs based on the
+        corresponding Google Sheets entry.
+      </Description>
+      <Description text>
+        <strong>Problem Solved: </strong>Streamlines receipt generation, reduces
+        the risk of human error, and saves valuable time and resources.
+      </Description>
+    </>
+  );
+};
 
 export const CV = (props) => {
   return (
