@@ -1,3 +1,5 @@
-const StackLayout = () => {};
+const StackLayout = () => {
+    return <></>
+};
 
 export default StackLayout;

@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 const Sidebar: React.FC = () => {
   const pages = [
     { id: "0", name: "Home", emoji: "🏡", to: "/" },
-    // { id: "1", name: "Bets", emoji: "🧪", to: "/bets" },
-    // { id: "2", name: "Stack", emoji: "⚔️", to: "/stack" },
-    // { id: "3", name: "Produc", emoji: "📦", to: "/Product" },
-    // { id: "4", name: "Blog", emoji: "📝", to: "/Blog" },
+    { id: "1", name: "Bets", emoji: "🧪", to: "/bets" },
+    { id: "2", name: "Stack", emoji: "⚔️", to: "/stack" },
+    { id: "3", name: "Produc", emoji: "📦", to: "/Product" },
+    { id: "4", name: "Blog", emoji: "📝", to: "/Blog" },
   ];
 
   return (
